@@ -1,13 +1,5 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        Formulario Estilos Interno
-    </title>
-    <link rel="stylesheet" href="/public/css/form.css">
-<body>
+
+
         
 
 <!-- App badge section-->
@@ -20,92 +12,7 @@
                 </div>
             </div>
         </section>
-
-        <main>
-        <form action="datosRecibidos.html" method="get">
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th class="imagen" rowspan="3"><img src="/Proyecto_FormularioCSS/img/images.png" alt=""></th>
-                        <th class="titulo" colspan="3">Condominio La Primavera</th>
-                    </tr>
-                    <tr>
-                        <td class="subtitulo" colspan="3">Registro de Deportistas</td>
-                    </tr>
-                    <tr>
-                        <td class="subtitulo" colspan="3">Periodo 2025 - 2026</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th colspan="4">Información básica</th>
-                    </tr>
-                    <tr>
-                        <td><label for="nombre">Primer nombre:</label></td>
-                        <td><input type="text" name="nombre" id="nombre" placeholder="Ejm. JOSE" title="INGRESE MAYUSCULAS" pattern="[A-Z]{1,15}" required></td>
-                        <td><label for="apellido">Primer apellido:</label></td>
-                        <td><input type="text" name="apellido" id="apellido" placeholder="Ejm. LEITON" title="INGRESE MAYUSCULAS" pattern="[A-Z]{1,15}" required></td>
-                    </tr>
-                    <tr>
-                        <td><label for="segundonombre">Segundo nombre:</label></td>
-                        <td><input type="text" name="segundonombre" id="segundonombre" placeholder="Ejm. IGNACIO" title="INGRESE MAYUSCULAS" pattern="[A-Z]{1,15}" required></td>
-                        <td><label for="segundoapellido">Segundo apellido:</label></td>
-                        <td><input type="text" name="segundoapellido" id="segundoapellido" placeholder="Ejm. HARO" title="INGRESE MAYUSCULAS" pattern="[A-Z]{1,15}" required></td>
-                    </tr>
-                    <tr>
-                        <th colspan="4">Información requerida</th>
-                    </tr>
-                    <tr>
-                        <td><label for="">Escoja días:</label></td>
-                        <td><input type="checkbox" name="dias[]" id="lunes"><label for="lunes">Lunes</label></td>
-                        <td><input type="checkbox" name="dias[]" id="martes"><label for="martes">Martes</label></td>
-                        <td><input type="checkbox" name="dias[]" id="viernes"><label for="viernes">Viernes</label></td>
-                    </tr>
-                    <tr>
-                        <td><label for="">Seleccione su sexo:</label></td>
-                        <td><input type="radio" name="sexo" id="hombre" value="hombre"><label for="hombre">Hombre</label></td>
-                        <td><input type="radio" name="sexo" id="mujer" value="mujer"><label for="mujer">Mujer</label></td>
-                        <td><input type="radio" name="sexo" id="otro" value="otro"><label for="otro">Otro</label></td>
-                    </tr>
-                    <tr>
-                        <th colspan="4">Información adicional</th>
-                    </tr>
-                    <tr>
-                        <td colspan="3"><label for="deporte">Seleccione su deporte favorito en el cual usted se considera bueno:</label></td>
-                        <td>
-                            <select name="deporte" id="deporte">
-                                <option value="futbol">Futbol</option>
-                                <option value="basquet">Basquet</option>
-                                <option value="voleyball">Voleyball</option>
-                                <option value="piscina">Piscina</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Comentarios de su deporte:</td>
-                        <td colspan="3"><textarea name="comentarioDeporte" id="comentarioDeporte" cols="50" rows="10">SOY BUENO EN MI DEPORTE ELEGIDO PORQUE ......</textarea></td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td rowspan="3" colspan="2">
-                            <input type="checkbox" name="requisitos[]" id="terminos"><label for="terminos">Acepto todos los terminos</label>
-                            <br>
-                            <input type="checkbox" name="requisitos[]" id="condiciones"><label for="condiciones">Acepto todos las condiciones</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th colspan="2"><button type="submit">ENVIAR</button></th>
-                    </tr>
-                    <tr>
-                        <th colspan="2"><button type="reset">VACIAR</button></th>
-                    </tr>
-                </tfoot>
-            </table>
-        </form>
         
-    </main>
 
 
 
-</body>

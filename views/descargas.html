@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>formulario2</title>
-</head>
-<link rel="stylesheet" href="/public/css/form.css">
-<body>
+
+
+
     
 
 <!-- Basic features section-->
@@ -25,125 +19,197 @@
         </section>
 
 
+<style>
+        
+        
+        form {
+            background-color: #2a2a2a;
+            color: #eeeeee;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+            width: 90%;
+            max-width: 900px;
+            border: 15px double #00adb5;
+            overflow-x: auto;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: #00adb5;
+            table-layout: fixed;
+            word-wrap: break-word;
+        }
+        
+        thead th img {
+            border-radius: 200px;
+            width: 90%;
+        }
+        
+        thead th.titulo {
+            background-color: #00adb5;
+            color: #ffffff;
+            padding: 10px;
+            font-size: 44px;
+            border: 1px solid #007a7f;
+        }
+        
+        thead td.subtitulo {
+            text-align: center;
+            font-size: 20px;
+            font-weight: 500;
+            letter-spacing: 11px;
+        }
+        
+        tbody th {
+            background-color: #3e3e3e;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+        
+        td input[type="text"], td select, textarea {
+            width: 100%;
+            padding: 10px;
+            background-color: #333333;
+            color: #eeeeee;
+            border: 2px solid #555555;
+            border-radius: 6px;
+        }
+        
+        td input[type="text"]:focus, select:focus, textarea:focus {
+            border-color: #00adb5;
+            box-shadow: 0px 0px 10px rgba(0, 173, 181, 0.5);
+            outline: none;
+        }
+        
+        tfoot th {
+            text-align: center;
+        }
+        
+        
+        button {
+            display: block;
+            width: 100%;
+            max-width: 300px;  
+            margin: 10px auto;  
+            background-color: #00adb5;
+            color: #ffffff;
+            border: none;
+            padding: 12px 0px;  
+            border-radius: 8px;
+            font-size: 22px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+        
+        button:hover {
+            background-color: #00cdd7;
+            color: #ffffff;
+        }
 
-        <form action="datos.html" method="post">
-    <table border="1">
-        <thead>
-            <tr>
-                <th rowspan="3">
-                    Logo
-                </th>
-                <th colspan="3">
-                    FACTURA
-                </th>
-            </tr>
-            <tr>
-                <th colspan="4">FORMULARIO CLIENTE</th>
-            </tr>
-            <tr>
-                <th colspan="2">
-                    Datos Requeridos
-                </th>
-                <td colspan="2">
-                    <ul>
-                        <li>INFORMACIÓN BÁSICA</li>
-                        <li>INFORMACIÓN CONTACTO</li>
-                        <li>INFORMACION RESIDENCIA</li>
-                    </ul>
-                </td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td colspan="4">
-                    <ul>
-                        <li>INFORMACION BÁSICA</li>
-                    </ul>
-                </th>
-            </tr>
-            <tr>
-                <td><label for="primerNombre">Primer nombre: </label></td>
-                <td><input type="text" name="primerNombre" id="primerNombre" placeholder="JOSE" required></td>
-                <td><label for="segundoNombre">Segundo nombre:</label></td>
-                <td><input type="text" name="segundoNombre" id="segundoNombre" placeholder="IGNACIO" required></td>
-            </tr>
-            <tr>
-                <td><label for="primerApellido">Primer apellido:</label></td>
-                <td><input type="text" name="primerApellido" id="primerApellido" placeholder="LEITON" required></td>
-                <td><label for="segundoApellido">Segundo apellido:</label></td>
-                <td><input type="text" name="segundoApellido" id="segundoApellido" placeholder="HARO" required></td>
-            </tr>
-            <tr>
-                <td><label for="fechaNacimiento">Fecha de nacimiento:</label></td>
-                <td><input type="date" name="fechaNacimiento" id="fechaNacimiento" value="2000-03-26"></td>
-                <td><label for="edad">Edad:</label></td>
-                <td><input type="number" name="edad" id="edad" placeholder="25" min="18" max="80" required></td>
-            </tr>
-            <tr>
-                <td><label for="">Sexo:</label></td>
-                <td><input type="radio" name="sexo" id="masculino"><label for="masculino">Masculino</label></td>
-                <td><input type="radio" name="sexo" id="femenino"><label for="femenino">Femenino</label></td>
-                <td><input type="radio" name="sexo" id="otro"><label for="otro">Otro</label></td>
-            </tr>
-            <tr>
-                <td colspan="4">
-                    <ul>
-                        <li>INFORMACION CONTACTO</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td><label for="telefono">Teléfono: </label></td>
-                <td><input type="tel" name="telefono" id="telefono" placeholder="0979357401" maxlength="10" minlength="10" required></td>
-                <td><label for="email">Email: </label></td>
-                <td><input type="email" name="email" id="email" placeholder="jileit@hotmail.com" required></td>
-            </tr>
-            <tr>
-                <td colspan="4">
-                    <ul>
-                        <li>INFORMACION RESIDENCIA</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td><label for="pais">Pais: </label></td>
-                <td><input type="text" name="pais" id="pais" placeholder="ECUADOR" required></td>
-                <td><label for="provincia">Provincia:</label></td>
-                <td><input type="text" name="provincia" id="provincia" placeholder="QUITO" required></td>
-            </tr>
-            <tr>
-                <td><label for="sector">Sector:</label></td>
-                <td colspan="3"><input type="text" name="sector" id="sector" placeholder="LAS CASAS" required></th>
-            </tr>
-            <tr>
-                <td><label for="calle1">Calle 1:</label></td>
-                <td><input type="text" name="calle1" id="calle2" placeholder="La Primavera" required></td>
-                <td><label for="calle2">Calle 2:</label></td>
-                <td><input type="text" name="calle2" id="calle2" placeholder="Gaetana Sterni" required></td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <th rowspan="3"><input type="checkbox" name="acuerdo" id="acuerdo"></th>
-                <td rowspan="3" colspan="2">
-                    <label for="acuerdo">
-                        <ol type="i">
-                            <li>Declaro que he leído, comprendido</li>
-                            <li>Acepto todos los términos y condiciones</li>
-                            <li>Establecidos en el presente formulario</li>
-                        </ol> 
-                    </label>
-                </td>
-            </tr>
-            <tr>
-                <th colspan="4"><input type="reset" name="vaciar" id="vaciar" value="RESTABLECER"></th>
-            </tr>
-            <tr>
-                <th colspan="4"><input type="submit" value="SUBIR"</th>
-            </tr>
-        </tfoot>
-    </table>
-    </form>
-
-</body>
-</html>
+    </style>
+</head>
+<body>
+    <header>
+        <img src="/Proyecto_FormularioCSS/img/images.png" alt="">
+        <h1>BIENVENIDO A MI FORMULARIO</h1>
+        <h2>ESTILOS EXTERNOS</h2>
+        <nav>
+            <ul>
+                <li>INICIO</li>
+                <li>FORMULARIO</li>
+                <li>CONTACTANOS</li>
+                <li>PREGUNTAS</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="datosRecibidos.html" method="get">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th class="imagen" rowspan="3"><img src="/Proyecto_FormularioCSS/img/images.png" alt=""></th>
+                        <th class="titulo" colspan="3">Condominio La Primavera</th>
+                    </tr>
+                    <tr>
+                        <td class="subtitulo" colspan="3">Registro de Deportistas</td>
+                    </tr>
+                    <tr>
+                        <td class="subtitulo" colspan="3">Periodo 2025 - 2026</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th colspan="4">Información básica</th>
+                    </tr>
+                    <tr>
+                        <td><label for="nombre">Primer nombre:</label></td>
+                        <td><input type="text" name="nombre" id="nombre" placeholder="Ejm. JOSE" title="INGRESE MAYUSCULAS" pattern="[A-Z]{1,15}" required></td>
+                        <td><label for="apellido">Primer apellido:</label></td>
+                        <td><input type="text" name="apellido" id="apellido" placeholder="Ejm. LEITON" title="INGRESE MAYUSCULAS" pattern="[A-Z]{1,15}" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="segundonombre">Segundo nombre:</label></td>
+                        <td><input type="text" name="segundonombre" id="segundonombre" placeholder="Ejm. IGNACIO" title="INGRESE MAYUSCULAS" pattern="[A-Z]{1,15}" required></td>
+                        <td><label for="segundoapellido">Segundo apellido:</label></td>
+                        <td><input type="text" name="segundoapellido" id="segundoapellido" placeholder="Ejm. HARO" title="INGRESE MAYUSCULAS" pattern="[A-Z]{1,15}" required></td>
+                    </tr>
+                    <tr>
+                        <th colspan="4">Información requerida</th>
+                    </tr>
+                    <tr>
+                        <td><label for="">Escoja días:</label></td>
+                        <td><input type="checkbox" name="dias[]" id="lunes"><label for="lunes">Lunes</label></td>
+                        <td><input type="checkbox" name="dias[]" id="martes"><label for="martes">Martes</label></td>
+                        <td><input type="checkbox" name="dias[]" id="viernes"><label for="viernes">Viernes</label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Seleccione su sexo:</label></td>
+                        <td><input type="radio" name="sexo" id="hombre" value="hombre"><label for="hombre">Hombre</label></td>
+                        <td><input type="radio" name="sexo" id="mujer" value="mujer"><label for="mujer">Mujer</label></td>
+                        <td><input type="radio" name="sexo" id="otro" value="otro"><label for="otro">Otro</label></td>
+                    </tr>
+                    <tr>
+                        <th colspan="4">Información adicional</th>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><label for="deporte">Seleccione su deporte favorito en el cual usted se considera bueno:</label></td>
+                        <td>
+                            <select name="deporte" id="deporte">
+                                <option value="futbol">Futbol</option>
+                                <option value="basquet">Basquet</option>
+                                <option value="voleyball">Voleyball</option>
+                                <option value="piscina">Piscina</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Comentarios de su deporte:</td>
+                        <td colspan="3"><textarea name="comentarioDeporte" id="comentarioDeporte" cols="50" rows="10">SOY BUENO EN MI DEPORTE ELEGIDO PORQUE ......</textarea></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td rowspan="3" colspan="2">
+                            <input type="checkbox" name="requisitos[]" id="terminos"><label for="terminos">Acepto todos los terminos</label>
+                            <br>
+                            <input type="checkbox" name="requisitos[]" id="condiciones"><label for="condiciones">Acepto todos las condiciones</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="2"><button type="submit">ENVIAR</button></th>
+                    </tr>
+                    <tr>
+                        <th colspan="2"><button type="reset">VACIAR</button></th>
+                    </tr>
+                </tfoot>
+            </table>
+        </form>
+    </main>
