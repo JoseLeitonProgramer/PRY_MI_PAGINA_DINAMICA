@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario2</title>
+</head>
+<link rel="stylesheet" href="/public/css/form.css">
+<body>
+    
+
 <!-- Basic features section-->
         <section class="bg-light">
             <div class="container px-5">
@@ -12,3 +23,127 @@
                 </div>
             </div>
         </section>
+
+
+
+        <form action="datos.html" method="post">
+    <table border="1">
+        <thead>
+            <tr>
+                <th rowspan="3">
+                    Logo
+                </th>
+                <th colspan="3">
+                    FACTURA
+                </th>
+            </tr>
+            <tr>
+                <th colspan="4">FORMULARIO CLIENTE</th>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    Datos Requeridos
+                </th>
+                <td colspan="2">
+                    <ul>
+                        <li>INFORMACIÓN BÁSICA</li>
+                        <li>INFORMACIÓN CONTACTO</li>
+                        <li>INFORMACION RESIDENCIA</li>
+                    </ul>
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="4">
+                    <ul>
+                        <li>INFORMACION BÁSICA</li>
+                    </ul>
+                </th>
+            </tr>
+            <tr>
+                <td><label for="primerNombre">Primer nombre: </label></td>
+                <td><input type="text" name="primerNombre" id="primerNombre" placeholder="JOSE" required></td>
+                <td><label for="segundoNombre">Segundo nombre:</label></td>
+                <td><input type="text" name="segundoNombre" id="segundoNombre" placeholder="IGNACIO" required></td>
+            </tr>
+            <tr>
+                <td><label for="primerApellido">Primer apellido:</label></td>
+                <td><input type="text" name="primerApellido" id="primerApellido" placeholder="LEITON" required></td>
+                <td><label for="segundoApellido">Segundo apellido:</label></td>
+                <td><input type="text" name="segundoApellido" id="segundoApellido" placeholder="HARO" required></td>
+            </tr>
+            <tr>
+                <td><label for="fechaNacimiento">Fecha de nacimiento:</label></td>
+                <td><input type="date" name="fechaNacimiento" id="fechaNacimiento" value="2000-03-26"></td>
+                <td><label for="edad">Edad:</label></td>
+                <td><input type="number" name="edad" id="edad" placeholder="25" min="18" max="80" required></td>
+            </tr>
+            <tr>
+                <td><label for="">Sexo:</label></td>
+                <td><input type="radio" name="sexo" id="masculino"><label for="masculino">Masculino</label></td>
+                <td><input type="radio" name="sexo" id="femenino"><label for="femenino">Femenino</label></td>
+                <td><input type="radio" name="sexo" id="otro"><label for="otro">Otro</label></td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <ul>
+                        <li>INFORMACION CONTACTO</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="telefono">Teléfono: </label></td>
+                <td><input type="tel" name="telefono" id="telefono" placeholder="0979357401" maxlength="10" minlength="10" required></td>
+                <td><label for="email">Email: </label></td>
+                <td><input type="email" name="email" id="email" placeholder="jileit@hotmail.com" required></td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <ul>
+                        <li>INFORMACION RESIDENCIA</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="pais">Pais: </label></td>
+                <td><input type="text" name="pais" id="pais" placeholder="ECUADOR" required></td>
+                <td><label for="provincia">Provincia:</label></td>
+                <td><input type="text" name="provincia" id="provincia" placeholder="QUITO" required></td>
+            </tr>
+            <tr>
+                <td><label for="sector">Sector:</label></td>
+                <td colspan="3"><input type="text" name="sector" id="sector" placeholder="LAS CASAS" required></th>
+            </tr>
+            <tr>
+                <td><label for="calle1">Calle 1:</label></td>
+                <td><input type="text" name="calle1" id="calle2" placeholder="La Primavera" required></td>
+                <td><label for="calle2">Calle 2:</label></td>
+                <td><input type="text" name="calle2" id="calle2" placeholder="Gaetana Sterni" required></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th rowspan="3"><input type="checkbox" name="acuerdo" id="acuerdo"></th>
+                <td rowspan="3" colspan="2">
+                    <label for="acuerdo">
+                        <ol type="i">
+                            <li>Declaro que he leído, comprendido</li>
+                            <li>Acepto todos los términos y condiciones</li>
+                            <li>Establecidos en el presente formulario</li>
+                        </ol> 
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <th colspan="4"><input type="reset" name="vaciar" id="vaciar" value="RESTABLECER"></th>
+            </tr>
+            <tr>
+                <th colspan="4"><input type="submit" value="SUBIR"</th>
+            </tr>
+        </tfoot>
+    </table>
+    </form>
+
+</body>
+</html>
