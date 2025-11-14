@@ -69,3 +69,12 @@
 /* Estilos para el header */
 .login-header{ width:100%; background:#ffffff; text-align:center; padding:14px 0; box-shadow: none; }
 .login-header h3{ margin:0; font-weight:700; color:#111827; letter-spacing:0.4px; }
+
+/* Reusar imagen de logo en register/forgot pages */
+.bg-register-image, .bg-password-image{
+  background-image: url('/public/img/logo.png') !important;
+  background-size: 65% auto !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-color: #ffffff !important;
+}

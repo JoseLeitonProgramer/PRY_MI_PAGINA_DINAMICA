@@ -83,6 +83,27 @@
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
 
+    <script>
+        // Manejo simple del formulario de login: validar campos y redirigir al dashboard
+        (function(){
+            var form = document.querySelector('form.user');
+            if(!form) return;
+            form.addEventListener('submit', function(e){
+                e.preventDefault();
+                var email = document.getElementById('exampleInputEmail').value.trim();
+                var pass = document.getElementById('exampleInputPassword').value.trim();
+                if(!email || !pass){
+                    // mensaje simple al usuario
+                    alert('Por favor ingresa correo y contraseña.');
+                    return;
+                }
+                // Aquí podrías agregar validación real o llamada al backend.
+                // Redirigir localmente al dashboard (archivo en la misma carpeta)
+                window.location.href = 'dashboard.html';
+            });
+        })();
+    </script>
+
 </body>
 
 </html>
