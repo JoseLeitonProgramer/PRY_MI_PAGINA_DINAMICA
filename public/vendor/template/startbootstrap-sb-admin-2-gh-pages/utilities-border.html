@@ -19,6 +19,9 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    
+    <!-- Estilos del Sistema de Administración -->
+    <link href="../../../css/sistema-admin.css" rel="stylesheet">
 
 </head>
 
@@ -360,51 +363,51 @@
 
                     <!-- Page Heading -->
                     <h1 class="h3 mb-4 text-gray-800">Estructuras y Jerarquía Visual</h1>
-                    <p class="mb-4 text-gray-600">Sistema de bordes y estructuras visuales para organizar la información del conjunto habitacional.</p>
+                    <p class="mb-4 text-gray-600">Reportes financieros, documentación y organización visual de la información administrativa del conjunto.</p>
 
-                    <!-- Cards Minimalistas -->
+                    <!-- Cards de Resumen Financiero -->
                     <div class="row mb-4">
                         <div class="col-lg-6 mb-4">
-                            <div class="card shadow mb-4 bg-dark">
-                                <div class="card-header py-3 bg-gray-800 border-bottom">
-                                    <h6 class="m-0 font-weight-bold text-white">
-                                        <i class="fas fa-square mr-2"></i>Cards Minimalistas sin Borde
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">
+                                        <i class="fas fa-dollar-sign mr-2"></i>Resumen Financiero del Mes
                                     </h6>
                                 </div>
                                 <div class="card-body">
-                                    <div class="card bg-gray-800 mb-3 border-0">
+                                    <div class="card bg-light mb-3 border-0">
                                         <div class="card-body">
-                                            <h6 class="text-white mb-2">Resumen Financiero</h6>
-                                            <p class="text-gray-400 small mb-0">Card sin borde para información general</p>
+                                            <h6 class="text-gray-800 mb-2">Total Recaudado</h6>
+                                            <p class="text-gray-600 small mb-0">$4,250.00 - Diciembre 2024</p>
                                         </div>
                                     </div>
-                                    <div class="card bg-gray-800 border-0">
+                                    <div class="card bg-light border-0">
                                         <div class="card-body">
-                                            <h6 class="text-white mb-2">Estado del Mes</h6>
-                                            <p class="text-gray-400 small mb-0">Diseño limpio y minimalista</p>
+                                            <h6 class="text-gray-800 mb-2">Estado del Mes</h6>
+                                            <p class="text-gray-600 small mb-0">85% de residentes al día</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6 mb-4">
-                            <div class="card shadow mb-4 bg-dark">
-                                <div class="card-header py-3 bg-gray-800 border-bottom">
-                                    <h6 class="m-0 font-weight-bold text-white">
-                                        <i class="fas fa-border-style mr-2"></i>Cards con Borde Tenue
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">
+                                        <i class="fas fa-exclamation-triangle mr-2"></i>Alertas y Notificaciones
                                     </h6>
                                 </div>
                                 <div class="card-body">
-                                    <div class="card bg-gray-800 mb-3 border border-secondary">
+                                    <div class="card bg-light mb-3 border border-warning">
                                         <div class="card-body">
-                                            <h6 class="text-white mb-2">Sección Importante</h6>
-                                            <p class="text-gray-400 small mb-0">Borde sutil para destacar contenido</p>
+                                            <h6 class="text-gray-800 mb-2">Pagos Pendientes</h6>
+                                            <p class="text-gray-600 small mb-0">3 residentes con pagos vencidos</p>
                                         </div>
                                     </div>
-                                    <div class="card bg-gray-800 border border-primary">
+                                    <div class="card bg-light border border-primary">
                                         <div class="card-body">
-                                            <h6 class="text-white mb-2">Información Crítica</h6>
-                                            <p class="text-gray-400 small mb-0">Borde de color para jerarquía</p>
+                                            <h6 class="text-gray-800 mb-2">Reservas Activas</h6>
+                                            <p class="text-gray-600 small mb-0">5 reservas confirmadas esta semana</p>
                                         </div>
                                     </div>
                                 </div>
@@ -412,35 +415,44 @@
                         </div>
                     </div>
 
-                    <!-- Tablas con Estilo Gris Oscuro -->
+                    <!-- Tabla de Estado de Pagos -->
                     <div class="row mb-4">
                         <div class="col-lg-12">
-                            <div class="card shadow mb-4 bg-dark">
-                                <div class="card-header py-3 bg-gray-800 border-bottom">
-                                    <h6 class="m-0 font-weight-bold text-white">
-                                        <i class="fas fa-table mr-2"></i>Tablas con Estilo Gris Oscuro Elegante
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">
+                                        <i class="fas fa-table mr-2"></i>Estado de Pagos de Residentes
                                     </h6>
                                 </div>
                                 <div class="card-body">
                                     <div class="table-responsive">
-                                        <table class="table table-bordered table-dark" width="100%" cellspacing="0">
-                                            <thead class="bg-gray-800">
+                                        <table class="table table-bordered" width="100%" cellspacing="0">
+                                            <thead>
                                                 <tr>
-                                                    <th class="border-secondary">Residente</th>
-                                                    <th class="border-secondary">Casa</th>
-                                                    <th class="border-secondary">Estado</th>
+                                                    <th>Residente</th>
+                                                    <th>Casa</th>
+                                                    <th>Estado</th>
+                                                    <th>Monto</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td class="border-secondary">María González</td>
-                                                    <td class="border-secondary">#01</td>
-                                                    <td class="border-secondary"><span class="badge badge-success">Pagado</span></td>
+                                                    <td>María González</td>
+                                                    <td>#01</td>
+                                                    <td><span class="badge badge-success">Pagado</span></td>
+                                                    <td>$150.00</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="border-secondary">Carlos Rodríguez</td>
-                                                    <td class="border-secondary">#02</td>
-                                                    <td class="border-secondary"><span class="badge badge-warning">Pendiente</span></td>
+                                                    <td>Carlos Rodríguez</td>
+                                                    <td>#02</td>
+                                                    <td><span class="badge badge-warning">Pendiente</span></td>
+                                                    <td>$150.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Ana Martínez</td>
+                                                    <td>#03</td>
+                                                    <td><span class="badge badge-success">Pagado</span></td>
+                                                    <td>$150.00</td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -450,82 +462,109 @@
                         </div>
                     </div>
 
-                    <!-- Inputs con Borde Sutil -->
+                    <!-- Reportes Financieros -->
                     <div class="row mb-4">
                         <div class="col-lg-6">
-                            <div class="card shadow mb-4 bg-dark">
-                                <div class="card-header py-3 bg-gray-800 border-bottom">
-                                    <h6 class="m-0 font-weight-bold text-white">
-                                        <i class="fas fa-edit mr-2"></i>Inputs con Borde Sutil
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">
+                                        <i class="fas fa-file-invoice-dollar mr-2"></i>Reporte Mensual de Ingresos
                                     </h6>
                                 </div>
                                 <div class="card-body">
-                                    <div class="form-group">
-                                        <label class="text-white">Nombre del Residente</label>
-                                        <input type="text" class="form-control bg-gray-800 text-white border-secondary" placeholder="Ingrese nombre">
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="text-white">Número de Casa</label>
-                                        <input type="text" class="form-control bg-gray-800 text-white border-secondary" placeholder="#01">
-                                    </div>
+                                    <form action="server.html" method="get">
+                                        <div class="form-group">
+                                            <label class="text-gray-800" for="mesReporte">Mes a Consultar</label>
+                                            <select class="form-control" id="mesReporte" name="mesReporte" required>
+                                                <option value="">Seleccione un mes</option>
+                                                <option value="Diciembre 2024">Diciembre 2024</option>
+                                                <option value="Noviembre 2024">Noviembre 2024</option>
+                                                <option value="Octubre 2024">Octubre 2024</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="text-gray-800" for="tipoReporte">Tipo de Reporte</label>
+                                            <select class="form-control" id="tipoReporte" name="tipoReporte" required>
+                                                <option value="">Seleccione un tipo</option>
+                                                <option value="Resumen General">Resumen General</option>
+                                                <option value="Detalle por Residente">Detalle por Residente</option>
+                                                <option value="Análisis de Morosidad">Análisis de Morosidad</option>
+                                            </select>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary btn-block">
+                                            <i class="fas fa-download mr-2"></i>Generar Reporte
+                                        </button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6">
-                            <div class="card shadow mb-4 bg-dark">
-                                <div class="card-header py-3 bg-gray-800 border-bottom">
-                                    <h6 class="m-0 font-weight-bold text-white">
-                                        <i class="fas fa-file-alt mr-2"></i>Formularios con Estilos Sobrios
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">
+                                        <i class="fas fa-calendar-check mr-2"></i>Reporte de Reservas
                                     </h6>
                                 </div>
                                 <div class="card-body">
-                                    <form>
+                                    <form action="server.html" method="get">
                                         <div class="form-group">
-                                            <label class="text-white">Monto</label>
-                                            <div class="input-group">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text bg-gray-800 text-white border-secondary">$</span>
+                                            <label class="text-gray-800">Período</label>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <input type="date" class="form-control" name="fechaDesde" placeholder="Desde" required>
                                                 </div>
-                                                <input type="number" class="form-control bg-gray-800 text-white border-secondary" placeholder="0.00">
+                                                <div class="col-md-6">
+                                                    <input type="date" class="form-control" name="fechaHasta" placeholder="Hasta" required>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="text-white">Fecha</label>
-                                            <input type="date" class="form-control bg-gray-800 text-white border-secondary">
+                                            <label class="text-gray-800" for="areaReporte">Área Común</label>
+                                            <select class="form-control" id="areaReporte" name="areaReporte" required>
+                                                <option value="">Seleccione un área</option>
+                                                <option value="Todas las áreas">Todas las áreas</option>
+                                                <option value="Piscina">Piscina</option>
+                                                <option value="Área BBQ">Área BBQ</option>
+                                                <option value="Cancha Deportiva">Cancha Deportiva</option>
+                                                <option value="Salón Comunal">Salón Comunal</option>
+                                            </select>
                                         </div>
+                                        <button type="submit" class="btn btn-info btn-block">
+                                            <i class="fas fa-file-export mr-2"></i>Exportar Reporte
+                                        </button>
                                     </form>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Contenedores Redondeados -->
+                    <!-- Información Agrupada por Categorías -->
                     <div class="row mb-4">
                         <div class="col-lg-12">
-                            <div class="card shadow mb-4 bg-dark">
-                                <div class="card-header py-3 bg-gray-800 border-bottom">
-                                    <h6 class="m-0 font-weight-bold text-white">
-                                        <i class="fas fa-circle mr-2"></i>Contenedores Redondeados para Agrupación
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">
+                                        <i class="fas fa-info-circle mr-2"></i>Información del Conjunto Habitacional
                                     </h6>
                                 </div>
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col-md-4 mb-3">
-                                            <div class="p-4 bg-gray-800 rounded border border-secondary">
-                                                <h6 class="text-white mb-2">Información de Pago</h6>
-                                                <p class="text-gray-400 small mb-0">Agrupación con bordes redondeados</p>
+                                            <div class="p-4 bg-light rounded border border-secondary">
+                                                <h6 class="text-gray-800 mb-2"><i class="fas fa-dollar-sign mr-2 text-primary"></i>Información de Pago</h6>
+                                                <p class="text-gray-600 small mb-0">Total de alícuotas: $150.00 mensuales</p>
                                             </div>
                                         </div>
                                         <div class="col-md-4 mb-3">
-                                            <div class="p-4 bg-gray-800 rounded border border-primary">
-                                                <h6 class="text-white mb-2">Datos del Residente</h6>
-                                                <p class="text-gray-400 small mb-0">Estructura visual clara</p>
+                                            <div class="p-4 bg-light rounded border border-primary">
+                                                <h6 class="text-gray-800 mb-2"><i class="fas fa-users mr-2 text-primary"></i>Datos del Residente</h6>
+                                                <p class="text-gray-600 small mb-0">20 unidades habitacionales registradas</p>
                                             </div>
                                         </div>
                                         <div class="col-md-4 mb-3">
-                                            <div class="p-4 bg-gray-800 rounded border border-success">
-                                                <h6 class="text-white mb-2">Estado de Reserva</h6>
-                                                <p class="text-gray-400 small mb-0">Jerarquía visual definida</p>
+                                            <div class="p-4 bg-light rounded border border-success">
+                                                <h6 class="text-gray-800 mb-2"><i class="fas fa-calendar-check mr-2 text-success"></i>Estado de Reservas</h6>
+                                                <p class="text-gray-600 small mb-0">4 áreas comunes disponibles</p>
                                             </div>
                                         </div>
                                     </div>
@@ -534,30 +573,30 @@
                         </div>
                     </div>
 
-                    <!-- Divisores Visuales -->
+                    <!-- Organización por Secciones del Sistema -->
                     <div class="row">
                         <div class="col-lg-12">
-                            <div class="card shadow mb-4 bg-dark">
-                                <div class="card-header py-3 bg-gray-800 border-bottom">
-                                    <h6 class="m-0 font-weight-bold text-white">
-                                        <i class="fas fa-grip-lines mr-2"></i>Divisores Visuales para Jerarquía de Secciones
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">
+                                        <i class="fas fa-sitemap mr-2"></i>Módulos del Sistema de Administración
                                     </h6>
                                 </div>
                                 <div class="card-body">
                                     <div class="mb-4">
-                                        <h5 class="text-white mb-3">Sección de Pagos</h5>
-                                        <hr class="border-secondary">
-                                        <p class="text-gray-400">Contenido de la sección de pagos separado visualmente.</p>
+                                        <h5 class="text-gray-800 mb-3"><i class="fas fa-money-bill-wave mr-2 text-primary"></i>Gestión de Pagos y Alícuotas</h5>
+                                        <hr class="border-primary">
+                                        <p class="text-gray-600">Administre los pagos mensuales de alícuotas, consulte el historial de pagos y gestione los estados de cuenta de cada residente del conjunto habitacional.</p>
                                     </div>
                                     <div class="mb-4">
-                                        <h5 class="text-white mb-3">Sección de Reservas</h5>
-                                        <hr class="border-primary">
-                                        <p class="text-gray-400">Contenido de reservas con divisor de color primario.</p>
+                                        <h5 class="text-gray-800 mb-3"><i class="fas fa-calendar-alt mr-2 text-info"></i>Reservas de Áreas Comunes</h5>
+                                        <hr class="border-info">
+                                        <p class="text-gray-600">Gestione las reservas de áreas comunes como piscina, área BBQ, cancha deportiva y salón comunal. Controle horarios y disponibilidad.</p>
                                     </div>
                                     <div>
-                                        <h5 class="text-white mb-3">Sección de Estadísticas</h5>
+                                        <h5 class="text-gray-800 mb-3"><i class="fas fa-chart-bar mr-2 text-success"></i>Estadísticas y Reportes</h5>
                                         <hr class="border-success">
-                                        <p class="text-gray-400">Divisor verde para sección de estadísticas.</p>
+                                        <p class="text-gray-600">Visualice estadísticas financieras, porcentaje de morosidad, reportes mensuales y análisis del comportamiento de pagos y reservas.</p>
                                     </div>
                                 </div>
                             </div>

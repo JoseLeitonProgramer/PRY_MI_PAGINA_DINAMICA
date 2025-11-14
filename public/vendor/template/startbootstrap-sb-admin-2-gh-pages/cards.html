@@ -19,6 +19,9 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    
+    <!-- Estilos del Sistema de Administración -->
+    <link href="../../../css/sistema-admin.css" rel="stylesheet">
 
 </head>
 
@@ -218,7 +221,7 @@
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="mr-3">
                                         <div class="icon-circle bg-primary">
-                                            <i class="fas fa-file-alt text-white"></i>
+                                            <i class="fas fa-file-alt text-gray-800"></i>
                                         </div>
                                     </div>
                                     <div>
@@ -229,7 +232,7 @@
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="mr-3">
                                         <div class="icon-circle bg-success">
-                                            <i class="fas fa-donate text-white"></i>
+                                            <i class="fas fa-donate text-gray-800"></i>
                                         </div>
                                     </div>
                                     <div>
@@ -240,7 +243,7 @@
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="mr-3">
                                         <div class="icon-circle bg-warning">
-                                            <i class="fas fa-exclamation-triangle text-white"></i>
+                                            <i class="fas fa-exclamation-triangle text-gray-800"></i>
                                         </div>
                                     </div>
                                     <div>
@@ -332,20 +335,20 @@
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
                                 <a class="dropdown-item" href="#">
-                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-600"></i>
                                     Profile
                                 </a>
                                 <a class="dropdown-item" href="#">
-                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-600"></i>
                                     Settings
                                 </a>
                                 <a class="dropdown-item" href="#">
-                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-600"></i>
                                     Activity Log
                                 </a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-600"></i>
                                     Logout
                                 </a>
                             </div>
@@ -363,7 +366,7 @@
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800">Reservas de Áreas Comunes</h1>
                         <button class="btn btn-dark btn-icon-split" data-toggle="modal" data-target="#nuevaReservaModal">
-                            <span class="icon text-white-50">
+                            <span class="icon text-gray-800-50">
                                 <i class="fas fa-plus"></i>
                             </span>
                             <span class="text">Nueva Reserva</span>
@@ -371,9 +374,9 @@
                     </div>
 
                     <!-- Carrusel de Áreas -->
-                    <div class="card shadow mb-4 bg-dark">
-                        <div class="card-header py-3 bg-gray-800 border-bottom">
-                            <h6 class="m-0 font-weight-bold text-white">
+                    <div class="card shadow mb-4 bg-white">
+                        <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                            <h6 class="m-0 font-weight-bold text-primary">
                                 <i class="fas fa-images mr-2"></i>Galería de Áreas Comunes
                             </h6>
                         </div>
@@ -387,34 +390,38 @@
                                 </ol>
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <div class="d-flex align-items-center justify-content-center bg-gray-800" style="height: 300px;">
-                                            <div class="text-center text-white">
-                                                <i class="fas fa-swimming-pool fa-5x mb-3"></i>
-                                                <h4>Piscina</h4>
+                                        <div class="d-flex align-items-center justify-content-center position-relative carousel-item-bg carousel-piscina">
+                                            <div class="position-absolute w-100 h-100 carousel-overlay"></div>
+                                            <div class="text-center text-white position-relative carousel-content">
+                                                <i class="fas fa-swimming-pool fa-5x mb-3 text-white"></i>
+                                                <h4 class="text-white">Piscina</h4>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                                        <div class="d-flex align-items-center justify-content-center bg-gray-800" style="height: 300px;">
-                                            <div class="text-center text-white">
-                                                <i class="fas fa-fire fa-5x mb-3"></i>
-                                                <h4>Área BBQ</h4>
+                                        <div class="d-flex align-items-center justify-content-center position-relative carousel-item-bg carousel-barbacoa">
+                                            <div class="position-absolute w-100 h-100 carousel-overlay"></div>
+                                            <div class="text-center text-white position-relative carousel-content">
+                                                <i class="fas fa-fire fa-5x mb-3 text-white"></i>
+                                                <h4 class="text-white">Área BBQ</h4>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                                        <div class="d-flex align-items-center justify-content-center bg-gray-800" style="height: 300px;">
-                                            <div class="text-center text-white">
-                                                <i class="fas fa-futbol fa-5x mb-3"></i>
-                                                <h4>Cancha Deportiva</h4>
+                                        <div class="d-flex align-items-center justify-content-center position-relative carousel-item-bg carousel-cancha">
+                                            <div class="position-absolute w-100 h-100 carousel-overlay"></div>
+                                            <div class="text-center text-white position-relative carousel-content">
+                                                <i class="fas fa-futbol fa-5x mb-3 text-white"></i>
+                                                <h4 class="text-white">Cancha Deportiva</h4>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                                        <div class="d-flex align-items-center justify-content-center bg-gray-800" style="height: 300px;">
-                                            <div class="text-center text-white">
-                                                <i class="fas fa-building fa-5x mb-3"></i>
-                                                <h4>Salón Comunal</h4>
+                                        <div class="d-flex align-items-center justify-content-center position-relative carousel-item-bg carousel-salon">
+                                            <div class="position-absolute w-100 h-100 carousel-overlay"></div>
+                                            <div class="text-center text-white position-relative carousel-content">
+                                                <i class="fas fa-building fa-5x mb-3 text-white"></i>
+                                                <h4 class="text-white">Salón Comunal</h4>
                                             </div>
                                         </div>
                                     </div>
@@ -435,18 +442,18 @@
                     <div class="row mb-4">
                         <!-- Piscina -->
                         <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card shadow h-100 bg-dark border-left-primary">
+                            <div class="card shadow h-100 bg-white border-left-primary">
                                 <div class="card-body">
                                     <div class="text-center mb-3">
                                         <i class="fas fa-swimming-pool fa-3x text-primary"></i>
                                     </div>
-                                    <h5 class="card-title text-white text-center">Piscina</h5>
-                                    <p class="card-text text-gray-400 text-center small">Capacidad: 20 personas</p>
+                                    <h5 class="card-title text-gray-800 text-center">Piscina</h5>
+                                    <p class="card-text text-gray-600 text-center small">Capacidad: 20 personas</p>
                                     <div class="text-center mb-3">
                                         <span class="badge badge-success">Disponible</span>
                                     </div>
                                     <p class="text-gray-500 small text-center mb-2">Horarios:</p>
-                                    <p class="text-gray-400 small text-center">6:00 AM - 10:00 PM</p>
+                                    <p class="text-gray-600 small text-center">6:00 AM - 10:00 PM</p>
                                     <button class="btn btn-primary btn-block btn-sm" data-toggle="modal" data-target="#nuevaReservaModal" data-area="Piscina">
                                         <i class="fas fa-calendar-plus mr-2"></i>Reservar
                                     </button>
@@ -456,18 +463,18 @@
 
                         <!-- BBQ -->
                         <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card shadow h-100 bg-dark border-left-warning">
+                            <div class="card shadow h-100 bg-white border-left-warning">
                                 <div class="card-body">
                                     <div class="text-center mb-3">
                                         <i class="fas fa-fire fa-3x text-warning"></i>
                                     </div>
-                                    <h5 class="card-title text-white text-center">Área BBQ</h5>
-                                    <p class="card-text text-gray-400 text-center small">Capacidad: 15 personas</p>
+                                    <h5 class="card-title text-gray-800 text-center">Área BBQ</h5>
+                                    <p class="card-text text-gray-600 text-center small">Capacidad: 15 personas</p>
                                     <div class="text-center mb-3">
                                         <span class="badge badge-warning">Ocupado</span>
                                     </div>
                                     <p class="text-gray-500 small text-center mb-2">Horarios:</p>
-                                    <p class="text-gray-400 small text-center">8:00 AM - 9:00 PM</p>
+                                    <p class="text-gray-600 small text-center">8:00 AM - 9:00 PM</p>
                                     <button class="btn btn-warning btn-block btn-sm" data-toggle="modal" data-target="#nuevaReservaModal" data-area="BBQ">
                                         <i class="fas fa-calendar-plus mr-2"></i>Reservar
                                     </button>
@@ -477,18 +484,18 @@
 
                         <!-- Cancha -->
                         <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card shadow h-100 bg-dark border-left-success">
+                            <div class="card shadow h-100 bg-white border-left-success">
                                 <div class="card-body">
                                     <div class="text-center mb-3">
                                         <i class="fas fa-futbol fa-3x text-success"></i>
                                     </div>
-                                    <h5 class="card-title text-white text-center">Cancha Deportiva</h5>
-                                    <p class="card-text text-gray-400 text-center small">Capacidad: 14 personas</p>
+                                    <h5 class="card-title text-gray-800 text-center">Cancha Deportiva</h5>
+                                    <p class="card-text text-gray-600 text-center small">Capacidad: 14 personas</p>
                                     <div class="text-center mb-3">
                                         <span class="badge badge-success">Disponible</span>
                                     </div>
                                     <p class="text-gray-500 small text-center mb-2">Horarios:</p>
-                                    <p class="text-gray-400 small text-center">5:00 AM - 11:00 PM</p>
+                                    <p class="text-gray-600 small text-center">5:00 AM - 11:00 PM</p>
                                     <button class="btn btn-success btn-block btn-sm" data-toggle="modal" data-target="#nuevaReservaModal" data-area="Cancha">
                                         <i class="fas fa-calendar-plus mr-2"></i>Reservar
                                     </button>
@@ -498,18 +505,18 @@
 
                         <!-- Salón Comunal -->
                         <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card shadow h-100 bg-dark border-left-info">
+                            <div class="card shadow h-100 bg-white border-left-info">
                                 <div class="card-body">
                                     <div class="text-center mb-3">
                                         <i class="fas fa-building fa-3x text-info"></i>
                                     </div>
-                                    <h5 class="card-title text-white text-center">Salón Comunal</h5>
-                                    <p class="card-text text-gray-400 text-center small">Capacidad: 50 personas</p>
+                                    <h5 class="card-title text-gray-800 text-center">Salón Comunal</h5>
+                                    <p class="card-text text-gray-600 text-center small">Capacidad: 50 personas</p>
                                     <div class="text-center mb-3">
                                         <span class="badge badge-success">Disponible</span>
                                     </div>
                                     <p class="text-gray-500 small text-center mb-2">Horarios:</p>
-                                    <p class="text-gray-400 small text-center">7:00 AM - 10:00 PM</p>
+                                    <p class="text-gray-600 small text-center">7:00 AM - 10:00 PM</p>
                                     <button class="btn btn-info btn-block btn-sm" data-toggle="modal" data-target="#nuevaReservaModal" data-area="Salón Comunal">
                                         <i class="fas fa-calendar-plus mr-2"></i>Reservar
                                     </button>
@@ -519,16 +526,16 @@
                     </div>
 
                     <!-- Tabla Próximas Reservas -->
-                    <div class="card shadow mb-4 bg-dark">
-                        <div class="card-header py-3 bg-gray-800 border-bottom">
-                            <h6 class="m-0 font-weight-bold text-white">
+                    <div class="card shadow mb-4 bg-white">
+                        <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                            <h6 class="m-0 font-weight-bold text-primary">
                                 <i class="fas fa-calendar-alt mr-2"></i>Próximas Reservas
                             </h6>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
-                                <table class="table table-bordered table-dark" width="100%" cellspacing="0">
-                                    <thead class="bg-gray-800">
+                                <table class="table table-bordered " width="100%" cellspacing="0">
+                                    <thead class="bg-light">
                                         <tr>
                                             <th>Área</th>
                                             <th>Fecha</th>
@@ -578,24 +585,24 @@
                     </div>
 
                     <!-- Acordeón Reglas de Uso -->
-                    <div class="card shadow mb-4 bg-dark">
-                        <div class="card-header py-3 bg-gray-800 border-bottom">
-                            <h6 class="m-0 font-weight-bold text-white">
+                    <div class="card shadow mb-4 bg-white">
+                        <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                            <h6 class="m-0 font-weight-bold text-primary">
                                 <i class="fas fa-info-circle mr-2"></i>Reglas de Uso y Normativas
                             </h6>
                         </div>
                         <div class="card-body">
                             <div class="accordion" id="reglasAccordion">
-                                <div class="card bg-gray-800 mb-2">
+                                <div class="card bg-light mb-2">
                                     <div class="card-header" id="headingUso">
                                         <h6 class="mb-0">
-                                            <button class="btn btn-link text-white" type="button" data-toggle="collapse" data-target="#collapseUso" aria-expanded="true" aria-controls="collapseUso">
+                                            <button class="btn btn-link text-gray-800" type="button" data-toggle="collapse" data-target="#collapseUso" aria-expanded="true" aria-controls="collapseUso">
                                                 <i class="fas fa-book mr-2"></i>Normas Generales de Uso
                                             </button>
                                         </h6>
                                     </div>
                                     <div id="collapseUso" class="collapse show" aria-labelledby="headingUso" data-parent="#reglasAccordion">
-                                        <div class="card-body text-gray-300">
+                                        <div class="card-body text-gray-600">
                                             <ul class="mb-0">
                                                 <li>Las reservas deben realizarse con al menos 24 horas de anticipación</li>
                                                 <li>El tiempo máximo de reserva es de 4 horas por día</li>
@@ -606,16 +613,16 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card bg-gray-800 mb-2">
+                                <div class="card bg-light mb-2">
                                     <div class="card-header" id="headingPiscina">
                                         <h6 class="mb-0">
-                                            <button class="btn btn-link text-white collapsed" type="button" data-toggle="collapse" data-target="#collapsePiscina" aria-expanded="false" aria-controls="collapsePiscina">
+                                            <button class="btn btn-link text-gray-800 collapsed" type="button" data-toggle="collapse" data-target="#collapsePiscina" aria-expanded="false" aria-controls="collapsePiscina">
                                                 <i class="fas fa-swimming-pool mr-2"></i>Reglas Específicas - Piscina
                                             </button>
                                         </h6>
                                     </div>
                                     <div id="collapsePiscina" class="collapse" aria-labelledby="headingPiscina" data-parent="#reglasAccordion">
-                                        <div class="card-body text-gray-300">
+                                        <div class="card-body text-gray-600">
                                             <ul class="mb-0">
                                                 <li>Uso de gorras de baño obligatorio</li>
                                                 <li>No se permite el ingreso de mascotas</li>
@@ -625,16 +632,16 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card bg-gray-800 mb-2">
+                                <div class="card bg-light mb-2">
                                     <div class="card-header" id="headingBBQ">
                                         <h6 class="mb-0">
-                                            <button class="btn btn-link text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseBBQ" aria-expanded="false" aria-controls="collapseBBQ">
+                                            <button class="btn btn-link text-gray-800 collapsed" type="button" data-toggle="collapse" data-target="#collapseBBQ" aria-expanded="false" aria-controls="collapseBBQ">
                                                 <i class="fas fa-fire mr-2"></i>Reglas Específicas - Área BBQ
                                             </button>
                                         </h6>
                                     </div>
                                     <div id="collapseBBQ" class="collapse" aria-labelledby="headingBBQ" data-parent="#reglasAccordion">
-                                        <div class="card-body text-gray-300">
+                                        <div class="card-body text-gray-600">
                                             <ul class="mb-0">
                                                 <li>Limpiar la parrilla después de su uso</li>
                                                 <li>Disponer correctamente de los residuos</li>
@@ -654,65 +661,68 @@
                 <!-- Modal Nueva Reserva -->
                 <div class="modal fade" id="nuevaReservaModal" tabindex="-1" role="dialog" aria-labelledby="nuevaReservaModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
-                        <div class="modal-content bg-dark">
-                            <div class="modal-header bg-gray-800 border-bottom">
-                                <h5 class="modal-title text-white" id="nuevaReservaModalLabel">
+                        <div class="modal-content bg-white">
+                            <div class="modal-header bg-light border-bottom">
+                                <h5 class="modal-title text-gray-800" id="nuevaReservaModalLabel">
                                     <i class="fas fa-calendar-plus mr-2"></i>Nueva Reserva
                                 </h5>
-                                <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                <button type="button" class="close text-gray-800" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <form>
+                                <form action="server.html" method="get">
                                     <div class="form-group">
-                                        <label class="text-white" for="areaSelect">Área</label>
-                                        <select class="form-control bg-gray-800 text-white border-secondary" id="areaSelect">
-                                            <option>Piscina</option>
-                                            <option>Área BBQ</option>
-                                            <option>Cancha Deportiva</option>
-                                            <option>Salón Comunal</option>
+                                        <label class="text-gray-800" for="areaSelect">Área</label>
+                                        <select class="form-control bg-light text-gray-800 border-secondary" id="areaSelect" name="area" required>
+                                            <option value="">Seleccione un área</option>
+                                            <option value="Piscina">Piscina</option>
+                                            <option value="Área BBQ">Área BBQ</option>
+                                            <option value="Cancha Deportiva">Cancha Deportiva</option>
+                                            <option value="Salón Comunal">Salón Comunal</option>
                                         </select>
                                     </div>
                                     <div class="form-group">
-                                        <label class="text-white" for="residenteReserva">Residente</label>
-                                        <select class="form-control bg-gray-800 text-white border-secondary" id="residenteReserva">
-                                            <option>María González - Casa #01</option>
-                                            <option>Carlos Rodríguez - Casa #02</option>
-                                            <option>Ana Martínez - Casa #03</option>
-                                            <option>Luis Pérez - Casa #04</option>
-                                            <option>Laura Sánchez - Casa #05</option>
+                                        <label class="text-gray-800" for="residenteReserva">Residente</label>
+                                        <select class="form-control bg-light text-gray-800 border-secondary" id="residenteReserva" name="residente" required>
+                                            <option value="">Seleccione un residente</option>
+                                            <option value="María González - Casa #01">María González - Casa #01</option>
+                                            <option value="Carlos Rodríguez - Casa #02">Carlos Rodríguez - Casa #02</option>
+                                            <option value="Ana Martínez - Casa #03">Ana Martínez - Casa #03</option>
+                                            <option value="Luis Pérez - Casa #04">Luis Pérez - Casa #04</option>
+                                            <option value="Laura Sánchez - Casa #05">Laura Sánchez - Casa #05</option>
                                         </select>
                                     </div>
                                     <div class="form-group">
-                                        <label class="text-white" for="fechaReserva">Fecha</label>
-                                        <input type="date" class="form-control bg-gray-800 text-white border-secondary" id="fechaReserva">
+                                        <label class="text-gray-800" for="fechaReserva">Fecha</label>
+                                        <input type="date" class="form-control bg-light text-gray-800 border-secondary" id="fechaReserva" name="fecha" required>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label class="text-white" for="horaInicio">Hora Inicio</label>
-                                                <input type="time" class="form-control bg-gray-800 text-white border-secondary" id="horaInicio">
+                                                <label class="text-gray-800" for="horaInicio">Hora Inicio</label>
+                                                <input type="time" class="form-control bg-light text-gray-800 border-secondary" id="horaInicio" name="horaInicio" required>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label class="text-white" for="horaFin">Hora Fin</label>
-                                                <input type="time" class="form-control bg-gray-800 text-white border-secondary" id="horaFin">
+                                                <label class="text-gray-800" for="horaFin">Hora Fin</label>
+                                                <input type="time" class="form-control bg-light text-gray-800 border-secondary" id="horaFin" name="horaFin" required>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="text-white" for="motivoReserva">Motivo de la Reserva</label>
-                                        <textarea class="form-control bg-gray-800 text-white border-secondary" id="motivoReserva" rows="3" placeholder="Ej: Celebración de cumpleaños"></textarea>
+                                        <label class="text-gray-800" for="motivoReserva">Motivo de la Reserva</label>
+                                        <textarea class="form-control bg-light text-gray-800 border-secondary" id="motivoReserva" name="motivo" rows="3" placeholder="Ej: Celebración de cumpleaños, Reunión familiar, etc." minlength="5" maxlength="200" required></textarea>
+                                        <small class="form-text text-muted">Mínimo 5 caracteres, máximo 200 caracteres</small>
+                                    </div>
+                                    <div class="modal-footer bg-light border-top px-0 pb-0">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                        <button type="submit" class="btn btn-success">
+                                            <i class="fas fa-check mr-2"></i>Confirmar Reserva
+                                        </button>
                                     </div>
                                 </form>
-                            </div>
-                            <div class="modal-footer bg-gray-800 border-top">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                                <button type="button" class="btn btn-success">
-                                    <i class="fas fa-check mr-2"></i>Confirmar Reserva
-                                </button>
                             </div>
                         </div>
                     </div>

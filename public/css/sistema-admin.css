@@ -1,0 +1,100 @@
+/* Estilos del Sistema de Administración de Conjunto Habitacional */
+
+/* Carrusel de Áreas Comunes */
+.carousel-item-bg {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-overlay {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.carousel-content {
+    z-index: 10;
+}
+
+/* Imágenes de fondo del carrusel */
+.carousel-piscina {
+    background-image: url('../videos/Piscina.gif');
+}
+
+.carousel-barbacoa {
+    background-image: url('../img/Barbacoa.png');
+}
+
+.carousel-cancha {
+    background-image: url('../img/Cancha.jpg');
+}
+
+.carousel-salon {
+    background-image: url('../img/Salon.png');
+}
+
+/* Animaciones */
+.hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5) !important;
+}
+
+.hover-highlight {
+    transition: background-color 0.3s ease, padding-left 0.3s ease;
+}
+
+.hover-highlight:hover {
+    background-color: #4e73df !important;
+    padding-left: 1.5rem;
+}
+
+.table-row-hover {
+    transition: background-color 0.2s ease;
+}
+
+.table-row-hover:hover {
+    background-color: #4e73df !important;
+}
+
+.fade-up-item {
+    animation: fadeUp 0.6s ease-out;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Toasts */
+.toast-visible {
+    opacity: 1;
+    min-width: 100%;
+}
+
+/* Progress bars */
+.progress-sm {
+    height: 8px;
+}
+
+.progress-md {
+    height: 20px;
+}
+
+/* Form controls */
+.search-input {
+    width: 200px;
+}
+
+.filter-select {
+    width: 150px;
+}
+
