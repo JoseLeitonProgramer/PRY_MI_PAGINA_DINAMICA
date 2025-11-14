@@ -1,0 +1,71 @@
+/* estilos personalizados para login */
+.bg-gradient-primary {
+  background: #ffffff !important;
+}
+.login-row{ min-height: 100vh; }
+
+
+.login-hero{
+  min-height: 100vh;
+  padding: 0;
+  width: 100%;
+  background-image: url('/public/img/logo.png');
+  /* reducir el tamaño del logo para que se vea nítido (HD) y centrarlo en el espacio disponible */
+  background-size: 70% auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-color: #ffffff;
+}
+
+/* quitar superposición para mostrar el logo limpio */
+.login-hero::before{ display: none; }
+
+.hero-content h2{
+  font-weight:700;
+  letter-spacing:0.6px;
+}
+
+.hero-content p{ margin-bottom:0; }
+/* Ajustes al formulario para aspecto más profesional */
+.form-control-user{
+  border-radius: 10px;
+  padding: 1.25rem 1rem;
+}
+.btn-user{
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  font-weight:600;
+}
+.btn-google{ background:#de5246; color:#fff; }
+.btn-facebook{ background:#3b5998; color:#fff; }
+/* esconder botones sociales en mobile para limpieza */
+@media (max-width: 991.98px){
+  .btn-google, .btn-facebook{ display:none; }
+  .login-hero{ display:none; }
+}
+
+/* Panel derecho (formulario) */
+
+.login-panel{ max-width:420px; width:100%; margin: 0; border-radius:12px 0 0 12px; height:100vh; background:#ffffff; }
+
+/* Centrar verticalmente el contenido del form dentro del panel */
+.login-panel .card-body{ display:flex; flex-direction:column; justify-content:center; height:100%; }
+
+/* limpiar estilos del formulario para fondo blanco */
+.login-panel .form-control{ background: #fff; border: 1px solid #e6e6e9; }
+.login-panel .text-gray-900{ color: #1f2937; }
+.login-panel .small{ color:#6b7280; }
+
+/* En pantallas grandes queremos que el panel derecho se pegue al borde derecho */
+@media (min-width: 992px){
+  .login-panel{ box-shadow: 0 14px 30px rgba(10,30,60,0.18); }
+}
+
+@media (max-width: 991.98px){
+  .login-panel{ margin: 1rem; border-radius:12px; height:auto; }
+}
+
+/* Estilos para el header */
+.login-header{ width:100%; background:#ffffff; text-align:center; padding:14px 0; box-shadow: none; }
+.login-header h3{ margin:0; font-weight:700; color:#111827; letter-spacing:0.4px; }
