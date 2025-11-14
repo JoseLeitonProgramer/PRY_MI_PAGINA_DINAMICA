@@ -72,7 +72,7 @@
 
 /* Reusar imagen de logo en register/forgot pages */
 .bg-register-image, .bg-password-image{
-  background-image: url('/public/img/logo.png') !important;
+  background-image: url('../../../../img/logo.png') !important;
   background-size: 65% auto !important;
   background-position: center center !important;
   background-repeat: no-repeat !important;
