@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Animation Utilities</title>
+    <title>Sistema de Administración - Interacciones y Flujo</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -359,111 +359,342 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-1 text-gray-800">Animation Utilities</h1>
-                    <p class="mb-4">Bootstrap's default utility classes can be found on the official <a
-                            href="https://getbootstrap.com/docs">Bootstrap Documentation</a> page. The custom utilities
-                        below were created to extend this theme past the default utility classes built into Bootstrap's
-                        framework.</p>
+                    <h1 class="h3 mb-4 text-gray-800">Interacciones y Flujo del Sistema</h1>
+                    <p class="mb-4 text-gray-600">Demostración de animaciones y transiciones suaves en las interacciones del sistema.</p>
 
-                    <!-- Content Row -->
-                    <div class="row">
-
-                        <!-- Grow In Utility -->
+                    <!-- Modal con Fade-in -->
+                    <div class="row mb-4">
                         <div class="col-lg-6">
-
-                            <div class="card position-relative">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Grow In Animation Utilty</h6>
+                            <div class="card shadow mb-4 bg-dark">
+                                <div class="card-header py-3 bg-gray-800 border-bottom">
+                                    <h6 class="m-0 font-weight-bold text-white">
+                                        <i class="fas fa-window-restore mr-2"></i>Modal "Registrar Pago" con Fade-in
+                                    </h6>
                                 </div>
                                 <div class="card-body">
-                                    <div class="mb-3">
-                                        <code>.animated--grow-in</code>
-                                    </div>
-                                    <div class="small mb-1">Navbar Dropdown Example:</div>
-                                    <nav class="navbar navbar-expand navbar-light bg-light mb-4">
-                                        <a class="navbar-brand" href="#">Navbar</a>
-                                        <ul class="navbar-nav ml-auto">
-                                            <li class="nav-item dropdown">
-                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                                                    role="button" data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="false">
-                                                    Dropdown
-                                                </a>
-                                                <div class="dropdown-menu dropdown-menu-right animated--grow-in"
-                                                    aria-labelledby="navbarDropdown">
-                                                    <a class="dropdown-item" href="#">Action</a>
-                                                    <a class="dropdown-item" href="#">Another action</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a class="dropdown-item" href="#">Something else here</a>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                    <p class="mb-0 small">Note: This utility animates the CSS transform property,
-                                        meaning it will override any existing transforms on an element being animated!
-                                        In this theme, the grow in animation is only being used on dropdowns within the
-                                        navbar.</p>
+                                    <p class="text-gray-400 mb-3">El modal aparece con una animación suave de fade-in al abrirse.</p>
+                                    <button class="btn btn-primary btn-icon-split" data-toggle="modal" data-target="#demoModalPago">
+                                        <span class="icon text-white-50">
+                                            <i class="fas fa-money-bill"></i>
+                                        </span>
+                                        <span class="text">Abrir Modal de Pago</span>
+                                    </button>
                                 </div>
                             </div>
-
                         </div>
-
-                        <!-- Fade In Utility -->
                         <div class="col-lg-6">
-
-                            <div class="card position-relative">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Fade In Animation Utilty</h6>
+                            <div class="card shadow mb-4 bg-dark">
+                                <div class="card-header py-3 bg-gray-800 border-bottom">
+                                    <h6 class="m-0 font-weight-bold text-white">
+                                        <i class="fas fa-sliders-h mr-2"></i>Offcanvas "Crear Reserva" con Slide
+                                    </h6>
                                 </div>
                                 <div class="card-body">
-                                    <div class="mb-3">
-                                        <code>.animated--fade-in</code>
-                                    </div>
-                                    <div class="small mb-1">Navbar Dropdown Example:</div>
-                                    <nav class="navbar navbar-expand navbar-light bg-light mb-4">
-                                        <a class="navbar-brand" href="#">Navbar</a>
-                                        <ul class="navbar-nav ml-auto">
-                                            <li class="nav-item dropdown">
-                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                                                    role="button" data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="false">
-                                                    Dropdown
-                                                </a>
-                                                <div class="dropdown-menu dropdown-menu-right animated--fade-in"
-                                                    aria-labelledby="navbarDropdown">
-                                                    <a class="dropdown-item" href="#">Action</a>
-                                                    <a class="dropdown-item" href="#">Another action</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                    <p class="text-gray-400 mb-3">El panel lateral se desliza suavemente desde la derecha.</p>
+                                    <button class="btn btn-success btn-icon-split" data-toggle="modal" data-target="#demoModalReserva">
+                                        <span class="icon text-white-50">
+                                            <i class="fas fa-calendar-plus"></i>
+                                        </span>
+                                        <span class="text">Abrir Panel de Reserva</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cards con Animación Hover -->
+                    <div class="row mb-4">
+                        <div class="col-lg-12">
+                            <div class="card shadow mb-4 bg-dark">
+                                <div class="card-header py-3 bg-gray-800 border-bottom">
+                                    <h6 class="m-0 font-weight-bold text-white">
+                                        <i class="fas fa-mouse-pointer mr-2"></i>Cards con Animación Hover Sutil
+                                    </h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-3 mb-3">
+                                            <div class="card bg-gray-800 border-left-primary h-100 hover-lift">
+                                                <div class="card-body text-center">
+                                                    <i class="fas fa-user fa-2x text-primary mb-2"></i>
+                                                    <h6 class="text-white">Residente</h6>
+                                                    <p class="text-gray-400 small mb-0">Pasa el mouse</p>
                                                 </div>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                    <div class="small mb-1">Dropdown Button Example:</div>
-                                    <div class="dropdown mb-4">
-                                        <button class="btn btn-primary dropdown-toggle" type="button"
-                                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                                            aria-expanded="false">
-                                            Dropdown
-                                        </button>
-                                        <div class="dropdown-menu animated--fade-in"
-                                            aria-labelledby="dropdownMenuButton">
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <a class="dropdown-item" href="#">Something else here</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 mb-3">
+                                            <div class="card bg-gray-800 border-left-success h-100 hover-lift">
+                                                <div class="card-body text-center">
+                                                    <i class="fas fa-dollar-sign fa-2x text-success mb-2"></i>
+                                                    <h6 class="text-white">Pago</h6>
+                                                    <p class="text-gray-400 small mb-0">Pasa el mouse</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 mb-3">
+                                            <div class="card bg-gray-800 border-left-warning h-100 hover-lift">
+                                                <div class="card-body text-center">
+                                                    <i class="fas fa-calendar fa-2x text-warning mb-2"></i>
+                                                    <h6 class="text-white">Reserva</h6>
+                                                    <p class="text-gray-400 small mb-0">Pasa el mouse</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 mb-3">
+                                            <div class="card bg-gray-800 border-left-info h-100 hover-lift">
+                                                <div class="card-body text-center">
+                                                    <i class="fas fa-chart-line fa-2x text-info mb-2"></i>
+                                                    <h6 class="text-white">Estadísticas</h6>
+                                                    <p class="text-gray-400 small mb-0">Pasa el mouse</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <p class="mb-0 small">Note: This utility animates the CSS opacity property, meaning
-                                        it will override any existing opacity on an element being animated!</p>
                                 </div>
                             </div>
-
                         </div>
+                    </div>
 
+                    <!-- Lista de Residentes con Animación -->
+                    <div class="row mb-4">
+                        <div class="col-lg-6">
+                            <div class="card shadow mb-4 bg-dark">
+                                <div class="card-header py-3 bg-gray-800 border-bottom">
+                                    <h6 class="m-0 font-weight-bold text-white">
+                                        <i class="fas fa-list mr-2"></i>Lista de Residentes con Animación al Pasar el Mouse
+                                    </h6>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item bg-gray-800 border-secondary text-white hover-highlight">
+                                            <i class="fas fa-home mr-2"></i>María González - Casa #01
+                                        </li>
+                                        <li class="list-group-item bg-gray-800 border-secondary text-white hover-highlight">
+                                            <i class="fas fa-home mr-2"></i>Carlos Rodríguez - Casa #02
+                                        </li>
+                                        <li class="list-group-item bg-gray-800 border-secondary text-white hover-highlight">
+                                            <i class="fas fa-home mr-2"></i>Ana Martínez - Casa #03
+                                        </li>
+                                        <li class="list-group-item bg-gray-800 border-secondary text-white hover-highlight">
+                                            <i class="fas fa-home mr-2"></i>Luis Pérez - Casa #04
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="card shadow mb-4 bg-dark">
+                                <div class="card-header py-3 bg-gray-800 border-bottom">
+                                    <h6 class="m-0 font-weight-bold text-white">
+                                        <i class="fas fa-table mr-2"></i>Tabla con Hilera Resaltada Animada
+                                    </h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-dark table-sm">
+                                            <thead class="bg-gray-800">
+                                                <tr>
+                                                    <th>Residente</th>
+                                                    <th>Estado</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="table-row-hover">
+                                                    <td>María González</td>
+                                                    <td><span class="badge badge-success">Pagado</span></td>
+                                                </tr>
+                                                <tr class="table-row-hover">
+                                                    <td>Carlos Rodríguez</td>
+                                                    <td><span class="badge badge-warning">Pendiente</span></td>
+                                                </tr>
+                                                <tr class="table-row-hover">
+                                                    <td>Ana Martínez</td>
+                                                    <td><span class="badge badge-danger">Atrasado</span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Acordeón con Animaciones -->
+                    <div class="row mb-4">
+                        <div class="col-lg-12">
+                            <div class="card shadow mb-4 bg-dark">
+                                <div class="card-header py-3 bg-gray-800 border-bottom">
+                                    <h6 class="m-0 font-weight-bold text-white">
+                                        <i class="fas fa-compress-arrows-alt mr-2"></i>Acordeón Informativo con Animaciones Suaves
+                                    </h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="accordion" id="animacionAccordion">
+                                        <div class="card bg-gray-800 mb-2">
+                                            <div class="card-header" id="headingInfo">
+                                                <h6 class="mb-0">
+                                                    <button class="btn btn-link text-white" type="button" data-toggle="collapse" data-target="#collapseInfo" aria-expanded="true" aria-controls="collapseInfo">
+                                                        <i class="fas fa-info-circle mr-2"></i>Información del Residente
+                                                    </button>
+                                                </h6>
+                                            </div>
+                                            <div id="collapseInfo" class="collapse show" aria-labelledby="headingInfo" data-parent="#animacionAccordion">
+                                                <div class="card-body text-gray-300">
+                                                    <p class="mb-0">Esta sección se expande y contrae con una animación suave. Contiene información detallada del residente seleccionado.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card bg-gray-800 mb-2">
+                                            <div class="card-header" id="headingHistorial">
+                                                <h6 class="mb-0">
+                                                    <button class="btn btn-link text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseHistorial" aria-expanded="false" aria-controls="collapseHistorial">
+                                                        <i class="fas fa-history mr-2"></i>Historial de Pagos
+                                                    </button>
+                                                </h6>
+                                            </div>
+                                            <div id="collapseHistorial" class="collapse" aria-labelledby="headingHistorial" data-parent="#animacionAccordion">
+                                                <div class="card-body text-gray-300">
+                                                    <p class="mb-0">Lista completa de pagos realizados con animación al expandir.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Indicadores con Fade-up -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card shadow mb-4 bg-dark">
+                                <div class="card-header py-3 bg-gray-800 border-bottom">
+                                    <h6 class="m-0 font-weight-bold text-white">
+                                        <i class="fas fa-chart-bar mr-2"></i>Indicadores que Aparecen con Efecto Fade-up
+                                    </h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-3 mb-3">
+                                            <div class="card bg-gray-800 border-left-primary fade-up-item">
+                                                <div class="card-body text-center">
+                                                    <h4 class="text-primary mb-0">85%</h4>
+                                                    <p class="text-gray-400 small mb-0">Pagos al día</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 mb-3">
+                                            <div class="card bg-gray-800 border-left-success fade-up-item">
+                                                <div class="card-body text-center">
+                                                    <h4 class="text-success mb-0">12</h4>
+                                                    <p class="text-gray-400 small mb-0">Reservas activas</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 mb-3">
+                                            <div class="card bg-gray-800 border-left-warning fade-up-item">
+                                                <div class="card-body text-center">
+                                                    <h4 class="text-warning mb-0">5</h4>
+                                                    <p class="text-gray-400 small mb-0">Pendientes</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 mb-3">
+                                            <div class="card bg-gray-800 border-left-info fade-up-item">
+                                                <div class="card-body text-center">
+                                                    <h4 class="text-info mb-0">3</h4>
+                                                    <p class="text-gray-400 small mb-0">En mora</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
                 <!-- /.container-fluid -->
+
+                <!-- Modal Demo Pago -->
+                <div class="modal fade" id="demoModalPago" tabindex="-1" role="dialog" aria-labelledby="demoModalPagoLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content bg-dark">
+                            <div class="modal-header bg-gray-800 border-bottom">
+                                <h5 class="modal-title text-white" id="demoModalPagoLabel">
+                                    <i class="fas fa-money-bill mr-2"></i>Registrar Pago
+                                </h5>
+                                <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p class="text-gray-400">Este modal aparece con una animación fade-in suave. Observa cómo se desvanece al abrirse.</p>
+                            </div>
+                            <div class="modal-footer bg-gray-800 border-top">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal Demo Reserva -->
+                <div class="modal fade" id="demoModalReserva" tabindex="-1" role="dialog" aria-labelledby="demoModalReservaLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content bg-dark">
+                            <div class="modal-header bg-gray-800 border-bottom">
+                                <h5 class="modal-title text-white" id="demoModalReservaLabel">
+                                    <i class="fas fa-calendar-plus mr-2"></i>Crear Reserva
+                                </h5>
+                                <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p class="text-gray-400">Este panel simula un offcanvas con animación slide. En un sistema real, se deslizaría desde el lado derecho.</p>
+                            </div>
+                            <div class="modal-footer bg-gray-800 border-top">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <style>
+                    .hover-lift {
+                        transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    }
+                    .hover-lift:hover {
+                        transform: translateY(-5px);
+                        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5) !important;
+                    }
+                    .hover-highlight {
+                        transition: background-color 0.3s ease, padding-left 0.3s ease;
+                    }
+                    .hover-highlight:hover {
+                        background-color: #4e73df !important;
+                        padding-left: 1.5rem;
+                    }
+                    .table-row-hover {
+                        transition: background-color 0.2s ease;
+                    }
+                    .table-row-hover:hover {
+                        background-color: #4e73df !important;
+                    }
+                    .fade-up-item {
+                        animation: fadeUp 0.6s ease-out;
+                    }
+                    @keyframes fadeUp {
+                        from {
+                            opacity: 0;
+                            transform: translateY(20px);
+                        }
+                        to {
+                            opacity: 1;
+                            transform: translateY(0);
+                        }
+                    }
+                </style>
 
             </div>
             <!-- End of Main Content -->

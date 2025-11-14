@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Other Utilities</title>
+    <title>Sistema de Administración - Componentes Funcionales</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -359,93 +359,416 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-1 text-gray-800">Other Utilities</h1>
-                    <p class="mb-4">Bootstrap's default utility classes can be found on the official <a
-                            href="https://getbootstrap.com/docs">Bootstrap Documentation</a> page. The custom utilities
-                        below were created to extend this theme past the default utility classes built into Bootstrap's
-                        framework.</p>
+                    <h1 class="h3 mb-4 text-gray-800">Componentes Funcionales del Sistema</h1>
+                    <p class="mb-4 text-gray-600">Componentes listos para usar en el sistema de administración del conjunto habitacional.</p>
 
-                    <!-- Content Row -->
-                    <div class="row">
-
-                        <div class="col-lg-6">
-
-                            <!-- Overflow Hidden -->
-                            <div class="card mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Overflow Hidden Utilty</h6>
+                    <!-- Offcanvas -->
+                    <div class="row mb-4">
+                        <div class="col-lg-6 mb-4">
+                            <div class="card shadow mb-4 bg-dark">
+                                <div class="card-header py-3 bg-gray-800 border-bottom">
+                                    <h6 class="m-0 font-weight-bold text-white">
+                                        <i class="fas fa-sliders-h mr-2"></i>Offcanvas - Buscar Residente
+                                    </h6>
                                 </div>
                                 <div class="card-body">
-                                    Use <code>.o-hidden</code> to set the overflow property of any element to hidden.
+                                    <p class="text-gray-400 mb-3">Panel lateral para búsqueda rápida de residentes.</p>
+                                    <button class="btn btn-primary" data-toggle="modal" data-target="#buscarResidenteModal">
+                                        <i class="fas fa-search mr-2"></i>Buscar Residente
+                                    </button>
                                 </div>
                             </div>
-
-                            <!-- Progress Small -->
-                            <div class="card mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Progress Small Utility</h6>
+                        </div>
+                        <div class="col-lg-6 mb-4">
+                            <div class="card shadow mb-4 bg-dark">
+                                <div class="card-header py-3 bg-gray-800 border-bottom">
+                                    <h6 class="m-0 font-weight-bold text-white">
+                                        <i class="fas fa-info-circle mr-2"></i>Offcanvas - Información Rápida
+                                    </h6>
                                 </div>
                                 <div class="card-body">
-                                    <div class="mb-1 small">Normal Progress Bar</div>
-                                    <div class="progress mb-4">
-                                        <div class="progress-bar" role="progressbar" style="width: 75%"
-                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <div class="mb-1 small">Small Progress Bar</div>
-                                    <div class="progress progress-sm mb-2">
-                                        <div class="progress-bar" role="progressbar" style="width: 75%"
-                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    Use the <code>.progress-sm</code> class along with <code>.progress</code>
+                                    <p class="text-gray-400 mb-3">Panel para mostrar información detallada del residente.</p>
+                                    <button class="btn btn-info" data-toggle="modal" data-target="#infoRapidaModal">
+                                        <i class="fas fa-eye mr-2"></i>Ver Detalles
+                                    </button>
                                 </div>
                             </div>
+                        </div>
+                    </div>
 
-                            <!-- Dropdown No Arrow -->
-                            <div class="card mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Dropdown - No Arrow</h6>
+                    <!-- Toasts -->
+                    <div class="row mb-4">
+                        <div class="col-lg-12">
+                            <div class="card shadow mb-4 bg-dark">
+                                <div class="card-header py-3 bg-gray-800 border-bottom">
+                                    <h6 class="m-0 font-weight-bold text-white">
+                                        <i class="fas fa-bell mr-2"></i>Toasts - Notificaciones del Sistema
+                                    </h6>
                                 </div>
                                 <div class="card-body">
-                                    <div class="dropdown no-arrow mb-4">
-                                        <button class="btn btn-secondary dropdown-toggle" type="button"
-                                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                                            aria-expanded="false">
-                                            Dropdown (no arrow)
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <a class="dropdown-item" href="#">Something else here</a>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <div class="toast bg-success text-white" role="alert" aria-live="assertive" aria-atomic="true" style="opacity: 1; min-width: 100%;">
+                                                <div class="toast-header bg-success text-white border-bottom">
+                                                    <i class="fas fa-check-circle mr-2"></i>
+                                                    <strong class="mr-auto">Pago registrado</strong>
+                                                    <button type="button" class="ml-2 mb-1 close text-white" data-dismiss="toast" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="toast-body">
+                                                    El pago ha sido registrado exitosamente.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <div class="toast bg-info text-white" role="alert" aria-live="assertive" aria-atomic="true" style="opacity: 1; min-width: 100%;">
+                                                <div class="toast-header bg-info text-white border-bottom">
+                                                    <i class="fas fa-calendar-check mr-2"></i>
+                                                    <strong class="mr-auto">Reserva creada</strong>
+                                                    <button type="button" class="ml-2 mb-1 close text-white" data-dismiss="toast" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="toast-body">
+                                                    La reserva ha sido confirmada.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <div class="toast bg-danger text-white" role="alert" aria-live="assertive" aria-atomic="true" style="opacity: 1; min-width: 100%;">
+                                                <div class="toast-header bg-danger text-white border-bottom">
+                                                    <i class="fas fa-exclamation-triangle mr-2"></i>
+                                                    <strong class="mr-auto">Error en formulario</strong>
+                                                    <button type="button" class="ml-2 mb-1 close text-white" data-dismiss="toast" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="toast-body">
+                                                    Por favor complete todos los campos requeridos.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <div class="toast bg-warning text-white" role="alert" aria-live="assertive" aria-atomic="true" style="opacity: 1; min-width: 100%;">
+                                                <div class="toast-header bg-warning text-white border-bottom">
+                                                    <i class="fas fa-user-times mr-2"></i>
+                                                    <strong class="mr-auto">Residente no encontrado</strong>
+                                                    <button type="button" class="ml-2 mb-1 close text-white" data-dismiss="toast" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="toast-body">
+                                                    No se encontró el residente buscado.
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    Add the <code>.no-arrow</code> class alongside the <code>.dropdown</code>
                                 </div>
                             </div>
-
                         </div>
+                    </div>
 
-                        <div class="col-lg-6">
+                    <!-- Acordeón Informativo -->
+                    <div class="row mb-4">
+                        <div class="col-lg-12">
+                            <div class="card shadow mb-4 bg-dark">
+                                <div class="card-header py-3 bg-gray-800 border-bottom">
+                                    <h6 class="m-0 font-weight-bold text-white">
+                                        <i class="fas fa-list-alt mr-2"></i>Acordeón Informativo - Datos del Residente
+                                    </h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="accordion" id="residenteAccordion">
+                                        <div class="card bg-gray-800 mb-2">
+                                            <div class="card-header" id="headingDatos">
+                                                <h6 class="mb-0">
+                                                    <button class="btn btn-link text-white" type="button" data-toggle="collapse" data-target="#collapseDatos" aria-expanded="true" aria-controls="collapseDatos">
+                                                        <i class="fas fa-user mr-2"></i>Datos del Residente
+                                                    </button>
+                                                </h6>
+                                            </div>
+                                            <div id="collapseDatos" class="collapse show" aria-labelledby="headingDatos" data-parent="#residenteAccordion">
+                                                <div class="card-body text-gray-300">
+                                                    <p class="mb-1"><strong>Nombre:</strong> María González</p>
+                                                    <p class="mb-1"><strong>Casa:</strong> #01</p>
+                                                    <p class="mb-0"><strong>Correo:</strong> maria@example.com</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card bg-gray-800 mb-2">
+                                            <div class="card-header" id="headingHistorialPagos">
+                                                <h6 class="mb-0">
+                                                    <button class="btn btn-link text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseHistorialPagos" aria-expanded="false" aria-controls="collapseHistorialPagos">
+                                                        <i class="fas fa-history mr-2"></i>Historial de Pagos
+                                                    </button>
+                                                </h6>
+                                            </div>
+                                            <div id="collapseHistorialPagos" class="collapse" aria-labelledby="headingHistorialPagos" data-parent="#residenteAccordion">
+                                                <div class="card-body text-gray-300">
+                                                    <div class="table-responsive">
+                                                        <table class="table table-dark table-sm mb-0">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Mes</th>
+                                                                    <th>Monto</th>
+                                                                    <th>Estado</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Diciembre 2024</td>
+                                                                    <td>$150.00</td>
+                                                                    <td><span class="badge badge-success">Pagado</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Noviembre 2024</td>
+                                                                    <td>$150.00</td>
+                                                                    <td><span class="badge badge-success">Pagado</span></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card bg-gray-800 mb-2">
+                                            <div class="card-header" id="headingHistorialReservas">
+                                                <h6 class="mb-0">
+                                                    <button class="btn btn-link text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseHistorialReservas" aria-expanded="false" aria-controls="collapseHistorialReservas">
+                                                        <i class="fas fa-calendar-alt mr-2"></i>Historial de Reservas
+                                                    </button>
+                                                </h6>
+                                            </div>
+                                            <div id="collapseHistorialReservas" class="collapse" aria-labelledby="headingHistorialReservas" data-parent="#residenteAccordion">
+                                                <div class="card-body text-gray-300">
+                                                    <p class="mb-1">15/12/2024 - Piscina (2:00 PM - 4:00 PM)</p>
+                                                    <p class="mb-0">10/11/2024 - Salón Comunal (7:00 PM - 10:00 PM)</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card bg-gray-800">
+                                            <div class="card-header" id="headingEstado">
+                                                <h6 class="mb-0">
+                                                    <button class="btn btn-link text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseEstado" aria-expanded="false" aria-controls="collapseEstado">
+                                                        <i class="fas fa-info-circle mr-2"></i>Estado de la Propiedad
+                                                    </button>
+                                                </h6>
+                                            </div>
+                                            <div id="collapseEstado" class="collapse" aria-labelledby="headingEstado" data-parent="#residenteAccordion">
+                                                <div class="card-body text-gray-300">
+                                                    <p class="mb-1"><strong>Estado:</strong> <span class="badge badge-success">Al día</span></p>
+                                                    <p class="mb-0"><strong>Penalidades:</strong> Ninguna</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                            <!-- Roitation Utilities -->
-                            <div class="card">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Rotation Utilities</h6>
+                    <!-- List Groups -->
+                    <div class="row mb-4">
+                        <div class="col-lg-4 mb-4">
+                            <div class="card shadow bg-dark">
+                                <div class="card-header py-3 bg-gray-800 border-bottom">
+                                    <h6 class="m-0 font-weight-bold text-white">
+                                        <i class="fas fa-clock mr-2"></i>Pagos Pendientes
+                                    </h6>
+                                </div>
+                                <div class="list-group list-group-flush">
+                                    <div class="list-group-item bg-gray-800 border-secondary text-white">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <h6 class="mb-1">Carlos Rodríguez</h6>
+                                            <span class="badge badge-warning">Pendiente</span>
+                                        </div>
+                                        <p class="mb-1 text-gray-400">Casa #02 - $150.00</p>
+                                        <small class="text-gray-500">Vence: 15/12/2024</small>
+                                    </div>
+                                    <div class="list-group-item bg-gray-800 border-secondary text-white">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <h6 class="mb-1">Laura Sánchez</h6>
+                                            <span class="badge badge-warning">Pendiente</span>
+                                        </div>
+                                        <p class="mb-1 text-gray-400">Casa #05 - $150.00</p>
+                                        <small class="text-gray-500">Vence: 18/12/2024</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-4">
+                            <div class="card shadow bg-dark">
+                                <div class="card-header py-3 bg-gray-800 border-bottom">
+                                    <h6 class="m-0 font-weight-bold text-white">
+                                        <i class="fas fa-calendar-check mr-2"></i>Reservas Próximas
+                                    </h6>
+                                </div>
+                                <div class="list-group list-group-flush">
+                                    <div class="list-group-item bg-gray-800 border-secondary text-white">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <h6 class="mb-1">Piscina</h6>
+                                            <span class="badge badge-success">Confirmada</span>
+                                        </div>
+                                        <p class="mb-1 text-gray-400">15/12/2024 - 2:00 PM</p>
+                                        <small class="text-gray-500">María González</small>
+                                    </div>
+                                    <div class="list-group-item bg-gray-800 border-secondary text-white">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <h6 class="mb-1">BBQ</h6>
+                                            <span class="badge badge-warning">Pendiente</span>
+                                        </div>
+                                        <p class="mb-1 text-gray-400">16/12/2024 - 6:00 PM</p>
+                                        <small class="text-gray-500">Carlos Rodríguez</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-4">
+                            <div class="card shadow bg-dark">
+                                <div class="card-header py-3 bg-gray-800 border-bottom">
+                                    <h6 class="m-0 font-weight-bold text-white">
+                                        <i class="fas fa-bell mr-2"></i>Notificaciones Importantes
+                                    </h6>
+                                </div>
+                                <div class="list-group list-group-flush">
+                                    <div class="list-group-item bg-gray-800 border-secondary text-white">
+                                        <i class="fas fa-exclamation-triangle text-warning mr-2"></i>
+                                        <strong>Reunión de copropietarios</strong>
+                                        <p class="mb-0 text-gray-400 small">20/12/2024 a las 7:00 PM</p>
+                                    </div>
+                                    <div class="list-group-item bg-gray-800 border-secondary text-white">
+                                        <i class="fas fa-tools text-info mr-2"></i>
+                                        <strong>Mantenimiento programado</strong>
+                                        <p class="mb-0 text-gray-400 small">22/12/2024 - Piscina</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Otros Componentes -->
+                    <div class="row">
+                        <div class="col-lg-4 mb-4">
+                            <div class="card shadow bg-dark">
+                                <div class="card-header py-3 bg-gray-800 border-bottom">
+                                    <h6 class="m-0 font-weight-bold text-white">
+                                        <i class="fas fa-spinner mr-2"></i>Spinner de Carga
+                                    </h6>
                                 </div>
                                 <div class="card-body text-center">
-                                    <div class="bg-primary text-white p-3 rotate-15 d-inline-block my-4">.rotate-15
+                                    <div class="spinner-border text-primary mb-3" role="status">
+                                        <span class="sr-only">Cargando...</span>
                                     </div>
-                                    <hr>
-                                    <div class="bg-primary text-white p-3 rotate-n-15 d-inline-block my-4">.rotate-n-15
+                                    <p class="text-gray-400 small mb-0">Cargando información...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-4">
+                            <div class="card shadow bg-dark">
+                                <div class="card-header py-3 bg-gray-800 border-bottom">
+                                    <h6 class="m-0 font-weight-bold text-white">
+                                        <i class="fas fa-chart-line mr-2"></i>Indicadores KPI
+                                    </h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <span class="text-gray-400 small">Pagos del mes</span>
+                                            <span class="text-white">85%</span>
+                                        </div>
+                                        <div class="progress" style="height: 8px;">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 85%"></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <span class="text-gray-400 small">Reservas activas</span>
+                                            <span class="text-white">12</span>
+                                        </div>
+                                        <div class="progress" style="height: 8px;">
+                                            <div class="progress-bar bg-info" role="progressbar" style="width: 60%"></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
-
+                        <div class="col-lg-4 mb-4">
+                            <div class="card shadow bg-dark">
+                                <div class="card-header py-3 bg-gray-800 border-bottom">
+                                    <h6 class="m-0 font-weight-bold text-white">
+                                        <i class="fas fa-tasks mr-2"></i>Barra de Progreso de Pagos
+                                    </h6>
+                                </div>
+                                <div class="card-body">
+                                    <p class="text-gray-400 small mb-2">Pagos del mes de Diciembre</p>
+                                    <div class="progress mb-2" style="height: 20px;">
+                                        <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                            85% Pagado
+                                        </div>
+                                    </div>
+                                    <p class="text-gray-400 small mb-0">45 de 53 residentes al día</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
                 <!-- /.container-fluid -->
+
+                <!-- Modal Buscar Residente -->
+                <div class="modal fade" id="buscarResidenteModal" tabindex="-1" role="dialog" aria-labelledby="buscarResidenteModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content bg-dark">
+                            <div class="modal-header bg-gray-800 border-bottom">
+                                <h5 class="modal-title text-white" id="buscarResidenteModalLabel">
+                                    <i class="fas fa-search mr-2"></i>Buscar Residente
+                                </h5>
+                                <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <input type="text" class="form-control bg-gray-800 text-white border-secondary" placeholder="Nombre o número de casa">
+                                </div>
+                                <button class="btn btn-primary btn-block">
+                                    <i class="fas fa-search mr-2"></i>Buscar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal Info Rápida -->
+                <div class="modal fade" id="infoRapidaModal" tabindex="-1" role="dialog" aria-labelledby="infoRapidaModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content bg-dark">
+                            <div class="modal-header bg-gray-800 border-bottom">
+                                <h5 class="modal-title text-white" id="infoRapidaModalLabel">
+                                    <i class="fas fa-info-circle mr-2"></i>Información del Residente
+                                </h5>
+                                <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p class="text-gray-400"><strong class="text-white">Nombre:</strong> María González</p>
+                                        <p class="text-gray-400"><strong class="text-white">Casa:</strong> #01</p>
+                                        <p class="text-gray-400"><strong class="text-white">Correo:</strong> maria@example.com</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="text-gray-400"><strong class="text-white">Estado:</strong> <span class="badge badge-success">Al día</span></p>
+                                        <p class="text-gray-400"><strong class="text-white">Último pago:</strong> 05/12/2024</p>
+                                        <p class="text-gray-400"><strong class="text-white">Reservas activas:</strong> 1</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
             <!-- End of Main Content -->
