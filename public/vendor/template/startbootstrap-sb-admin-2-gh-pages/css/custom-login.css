@@ -9,7 +9,7 @@
   min-height: 100vh;
   padding: 0;
   width: 100%;
-  background-image: url('/public/img/logo.png');
+  background-image: url('../../../../img/logo.png');
   /* reducir el tamaño del logo para que se vea nítido (HD) y centrarlo en el espacio disponible */
   background-size: 70% auto;
   background-position: center center;
