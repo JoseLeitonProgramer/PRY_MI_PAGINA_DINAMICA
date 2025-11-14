@@ -19,6 +19,9 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    
+    <!-- Estilos del Sistema de Administración -->
+    <link href="../../../css/sistema-admin.css" rel="stylesheet">
 
 </head>
 
@@ -217,7 +220,7 @@
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="mr-3">
                                         <div class="icon-circle bg-primary">
-                                            <i class="fas fa-file-alt text-white"></i>
+                                            <i class="fas fa-file-alt text-gray-800"></i>
                                         </div>
                                     </div>
                                     <div>
@@ -228,7 +231,7 @@
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="mr-3">
                                         <div class="icon-circle bg-success">
-                                            <i class="fas fa-donate text-white"></i>
+                                            <i class="fas fa-donate text-gray-800"></i>
                                         </div>
                                     </div>
                                     <div>
@@ -239,7 +242,7 @@
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="mr-3">
                                         <div class="icon-circle bg-warning">
-                                            <i class="fas fa-exclamation-triangle text-white"></i>
+                                            <i class="fas fa-exclamation-triangle text-gray-800"></i>
                                         </div>
                                     </div>
                                     <div>
@@ -331,20 +334,20 @@
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
                                 <a class="dropdown-item" href="#">
-                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-600"></i>
                                     Profile
                                 </a>
                                 <a class="dropdown-item" href="#">
-                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-600"></i>
                                     Settings
                                 </a>
                                 <a class="dropdown-item" href="#">
-                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-600"></i>
                                     Activity Log
                                 </a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-600"></i>
                                     Logout
                                 </a>
                             </div>
@@ -360,42 +363,42 @@
 
                     <!-- Page Heading -->
                     <h1 class="h3 mb-4 text-gray-800">Interacciones y Flujo del Sistema</h1>
-                    <p class="mb-4 text-gray-600">Demostración de animaciones y transiciones suaves en las interacciones del sistema.</p>
+                    <p class="mb-4 text-gray-600">Gestión de notificaciones, alertas y flujos de trabajo del sistema de administración del conjunto habitacional.</p>
 
                     <!-- Modal con Fade-in -->
                     <div class="row mb-4">
                         <div class="col-lg-6">
-                            <div class="card shadow mb-4 bg-dark">
-                                <div class="card-header py-3 bg-gray-800 border-bottom">
-                                    <h6 class="m-0 font-weight-bold text-white">
-                                        <i class="fas fa-window-restore mr-2"></i>Modal "Registrar Pago" con Fade-in
+                            <div class="card shadow mb-4 bg-white">
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">
+                                        <i class="fas fa-bell mr-2"></i>Notificaciones del Sistema
                                     </h6>
                                 </div>
                                 <div class="card-body">
-                                    <p class="text-gray-400 mb-3">El modal aparece con una animación suave de fade-in al abrirse.</p>
+                                    <p class="text-gray-600 mb-3">Configure y gestione las notificaciones automáticas del sistema: recordatorios de pagos, confirmaciones de reservas y alertas de morosidad.</p>
                                     <button class="btn btn-primary btn-icon-split" data-toggle="modal" data-target="#demoModalPago">
-                                        <span class="icon text-white-50">
-                                            <i class="fas fa-money-bill"></i>
+                                        <span class="icon text-gray-800-50">
+                                            <i class="fas fa-bell"></i>
                                         </span>
-                                        <span class="text">Abrir Modal de Pago</span>
+                                        <span class="text">Ver Notificaciones</span>
                                     </button>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6">
-                            <div class="card shadow mb-4 bg-dark">
-                                <div class="card-header py-3 bg-gray-800 border-bottom">
-                                    <h6 class="m-0 font-weight-bold text-white">
-                                        <i class="fas fa-sliders-h mr-2"></i>Offcanvas "Crear Reserva" con Slide
+                            <div class="card shadow mb-4 bg-white">
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">
+                                        <i class="fas fa-exclamation-triangle mr-2"></i>Alertas y Recordatorios
                                     </h6>
                                 </div>
                                 <div class="card-body">
-                                    <p class="text-gray-400 mb-3">El panel lateral se desliza suavemente desde la derecha.</p>
-                                    <button class="btn btn-success btn-icon-split" data-toggle="modal" data-target="#demoModalReserva">
-                                        <span class="icon text-white-50">
-                                            <i class="fas fa-calendar-plus"></i>
+                                    <p class="text-gray-600 mb-3">Sistema de alertas para pagos vencidos, reservas próximas a vencer y eventos importantes del conjunto habitacional.</p>
+                                    <button class="btn btn-warning btn-icon-split" data-toggle="modal" data-target="#demoModalReserva">
+                                        <span class="icon text-gray-800-50">
+                                            <i class="fas fa-exclamation-triangle"></i>
                                         </span>
-                                        <span class="text">Abrir Panel de Reserva</span>
+                                        <span class="text">Ver Alertas</span>
                                     </button>
                                 </div>
                             </div>
@@ -405,47 +408,47 @@
                     <!-- Cards con Animación Hover -->
                     <div class="row mb-4">
                         <div class="col-lg-12">
-                            <div class="card shadow mb-4 bg-dark">
-                                <div class="card-header py-3 bg-gray-800 border-bottom">
-                                    <h6 class="m-0 font-weight-bold text-white">
-                                        <i class="fas fa-mouse-pointer mr-2"></i>Cards con Animación Hover Sutil
+                            <div class="card shadow mb-4 bg-white">
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">
+                                        <i class="fas fa-mouse-pointer mr-2"></i>Resumen de Alícuotas y Reservas
                                     </h6>
                                 </div>
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col-md-3 mb-3">
-                                            <div class="card bg-gray-800 border-left-primary h-100 hover-lift">
+                                            <div class="card bg-light border-left-primary h-100 hover-lift" title="María González - Casa #01 - Estado: Al día">
                                                 <div class="card-body text-center">
                                                     <i class="fas fa-user fa-2x text-primary mb-2"></i>
-                                                    <h6 class="text-white">Residente</h6>
-                                                    <p class="text-gray-400 small mb-0">Pasa el mouse</p>
+                                                    <h6 class="text-gray-800">María González</h6>
+                                                    <p class="text-gray-600 small mb-0">Casa #01 - Al día</p>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-3 mb-3">
-                                            <div class="card bg-gray-800 border-left-success h-100 hover-lift">
+                                            <div class="card bg-light border-left-success h-100 hover-lift" title="Diciembre 2024 - $150.00 - Pagado">
                                                 <div class="card-body text-center">
                                                     <i class="fas fa-dollar-sign fa-2x text-success mb-2"></i>
-                                                    <h6 class="text-white">Pago</h6>
-                                                    <p class="text-gray-400 small mb-0">Pasa el mouse</p>
+                                                    <h6 class="text-gray-800">Diciembre 2024</h6>
+                                                    <p class="text-gray-600 small mb-0">$150.00 - Pagado</p>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-3 mb-3">
-                                            <div class="card bg-gray-800 border-left-warning h-100 hover-lift">
+                                            <div class="card bg-light border-left-warning h-100 hover-lift" title="Piscina - 15/12/2024 - 2:00 PM - 4:00 PM">
                                                 <div class="card-body text-center">
                                                     <i class="fas fa-calendar fa-2x text-warning mb-2"></i>
-                                                    <h6 class="text-white">Reserva</h6>
-                                                    <p class="text-gray-400 small mb-0">Pasa el mouse</p>
+                                                    <h6 class="text-gray-800">Piscina</h6>
+                                                    <p class="text-gray-600 small mb-0">15/12/2024 - 2:00 PM</p>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-3 mb-3">
-                                            <div class="card bg-gray-800 border-left-info h-100 hover-lift">
+                                            <div class="card bg-light border-left-info h-100 hover-lift" title="Notificaciones Pendientes: 5 - Alertas Activas: 2">
                                                 <div class="card-body text-center">
-                                                    <i class="fas fa-chart-line fa-2x text-info mb-2"></i>
-                                                    <h6 class="text-white">Estadísticas</h6>
-                                                    <p class="text-gray-400 small mb-0">Pasa el mouse</p>
+                                                    <i class="fas fa-bell fa-2x text-info mb-2"></i>
+                                                    <h6 class="text-gray-800">Notificaciones</h6>
+                                                    <p class="text-gray-600 small mb-0">5 pendientes - 2 alertas</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -458,24 +461,24 @@
                     <!-- Lista de Residentes con Animación -->
                     <div class="row mb-4">
                         <div class="col-lg-6">
-                            <div class="card shadow mb-4 bg-dark">
-                                <div class="card-header py-3 bg-gray-800 border-bottom">
-                                    <h6 class="m-0 font-weight-bold text-white">
-                                        <i class="fas fa-list mr-2"></i>Lista de Residentes con Animación al Pasar el Mouse
+                            <div class="card shadow mb-4 bg-white">
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">
+                                        <i class="fas fa-list mr-2"></i>Listado de Residentes y Sus Pagos
                                     </h6>
                                 </div>
                                 <div class="card-body">
                                     <ul class="list-group">
-                                        <li class="list-group-item bg-gray-800 border-secondary text-white hover-highlight">
+                                        <li class="list-group-item bg-light border-secondary text-gray-800 hover-highlight">
                                             <i class="fas fa-home mr-2"></i>María González - Casa #01
                                         </li>
-                                        <li class="list-group-item bg-gray-800 border-secondary text-white hover-highlight">
+                                        <li class="list-group-item bg-light border-secondary text-gray-800 hover-highlight">
                                             <i class="fas fa-home mr-2"></i>Carlos Rodríguez - Casa #02
                                         </li>
-                                        <li class="list-group-item bg-gray-800 border-secondary text-white hover-highlight">
+                                        <li class="list-group-item bg-light border-secondary text-gray-800 hover-highlight">
                                             <i class="fas fa-home mr-2"></i>Ana Martínez - Casa #03
                                         </li>
-                                        <li class="list-group-item bg-gray-800 border-secondary text-white hover-highlight">
+                                        <li class="list-group-item bg-light border-secondary text-gray-800 hover-highlight">
                                             <i class="fas fa-home mr-2"></i>Luis Pérez - Casa #04
                                         </li>
                                     </ul>
@@ -483,16 +486,16 @@
                             </div>
                         </div>
                         <div class="col-lg-6">
-                            <div class="card shadow mb-4 bg-dark">
-                                <div class="card-header py-3 bg-gray-800 border-bottom">
-                                    <h6 class="m-0 font-weight-bold text-white">
-                                        <i class="fas fa-table mr-2"></i>Tabla con Hilera Resaltada Animada
+                            <div class="card shadow mb-4 bg-white">
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">
+                                        <i class="fas fa-table mr-2"></i>Control de Pagos y Alícuotas
                                     </h6>
                                 </div>
                                 <div class="card-body">
                                     <div class="table-responsive">
-                                        <table class="table table-dark table-sm">
-                                            <thead class="bg-gray-800">
+                                        <table class="table  table-sm">
+                                            <thead class="bg-light">
                                                 <tr>
                                                     <th>Residente</th>
                                                     <th>Estado</th>
@@ -522,39 +525,129 @@
                     <!-- Acordeón con Animaciones -->
                     <div class="row mb-4">
                         <div class="col-lg-12">
-                            <div class="card shadow mb-4 bg-dark">
-                                <div class="card-header py-3 bg-gray-800 border-bottom">
-                                    <h6 class="m-0 font-weight-bold text-white">
-                                        <i class="fas fa-compress-arrows-alt mr-2"></i>Acordeón Informativo con Animaciones Suaves
+                            <div class="card shadow mb-4 bg-white">
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">
+                                        <i class="fas fa-compress-arrows-alt mr-2"></i>Información Detallada del Residente
                                     </h6>
                                 </div>
                                 <div class="card-body">
                                     <div class="accordion" id="animacionAccordion">
-                                        <div class="card bg-gray-800 mb-2">
+                                        <div class="card bg-light mb-2">
                                             <div class="card-header" id="headingInfo">
                                                 <h6 class="mb-0">
-                                                    <button class="btn btn-link text-white" type="button" data-toggle="collapse" data-target="#collapseInfo" aria-expanded="true" aria-controls="collapseInfo">
+                                                    <button class="btn btn-link text-gray-800" type="button" data-toggle="collapse" data-target="#collapseInfo" aria-expanded="true" aria-controls="collapseInfo">
                                                         <i class="fas fa-info-circle mr-2"></i>Información del Residente
                                                     </button>
                                                 </h6>
                                             </div>
                                             <div id="collapseInfo" class="collapse show" aria-labelledby="headingInfo" data-parent="#animacionAccordion">
-                                                <div class="card-body text-gray-300">
-                                                    <p class="mb-0">Esta sección se expande y contrae con una animación suave. Contiene información detallada del residente seleccionado.</p>
+                                                <div class="card-body text-gray-600">
+                                                    <div class="row mb-3">
+                                                        <div class="col-md-6">
+                                                            <p class="mb-2"><strong>Nombre:</strong> María González</p>
+                                                            <p class="mb-2"><strong>Casa:</strong> #01</p>
+                                                            <p class="mb-2"><strong>Correo:</strong> maria.gonzalez@email.com</p>
+                                                            <p class="mb-2"><strong>Teléfono:</strong> +57 300 123 4567</p>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <p class="mb-2"><strong>Fecha de Ingreso:</strong> 15/03/2020</p>
+                                                            <p class="mb-2"><strong>Estado:</strong> <span class="badge badge-success">Activo</span></p>
+                                                            <p class="mb-2"><strong>Alícuota Mensual:</strong> $150.00</p>
+                                                            <p class="mb-0"><strong>Último Pago:</strong> 05/12/2024</p>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card bg-gray-800 mb-2">
+                                        <div class="card bg-light mb-2">
                                             <div class="card-header" id="headingHistorial">
                                                 <h6 class="mb-0">
-                                                    <button class="btn btn-link text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseHistorial" aria-expanded="false" aria-controls="collapseHistorial">
+                                                    <button class="btn btn-link text-gray-800 collapsed" type="button" data-toggle="collapse" data-target="#collapseHistorial" aria-expanded="false" aria-controls="collapseHistorial">
                                                         <i class="fas fa-history mr-2"></i>Historial de Pagos
                                                     </button>
                                                 </h6>
                                             </div>
                                             <div id="collapseHistorial" class="collapse" aria-labelledby="headingHistorial" data-parent="#animacionAccordion">
-                                                <div class="card-body text-gray-300">
-                                                    <p class="mb-0">Lista completa de pagos realizados con animación al expandir.</p>
+                                                <div class="card-body text-gray-600">
+                                                    <div class="table-responsive">
+                                                        <table class="table table-sm table-bordered">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Mes</th>
+                                                                    <th>Monto</th>
+                                                                    <th>Fecha Pago</th>
+                                                                    <th>Método</th>
+                                                                    <th>Estado</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Diciembre 2024</td>
+                                                                    <td>$150.00</td>
+                                                                    <td>05/12/2024</td>
+                                                                    <td>Transferencia</td>
+                                                                    <td><span class="badge badge-success">Pagado</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Noviembre 2024</td>
+                                                                    <td>$150.00</td>
+                                                                    <td>03/11/2024</td>
+                                                                    <td>Efectivo</td>
+                                                                    <td><span class="badge badge-success">Pagado</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Octubre 2024</td>
+                                                                    <td>$150.00</td>
+                                                                    <td>01/10/2024</td>
+                                                                    <td>Depósito</td>
+                                                                    <td><span class="badge badge-success">Pagado</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Septiembre 2024</td>
+                                                                    <td>$150.00</td>
+                                                                    <td>-</td>
+                                                                    <td>-</td>
+                                                                    <td><span class="badge badge-warning">Pendiente</span></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card bg-light mb-2">
+                                            <div class="card-header" id="headingReservas">
+                                                <h6 class="mb-0">
+                                                    <button class="btn btn-link text-gray-800 collapsed" type="button" data-toggle="collapse" data-target="#collapseReservas" aria-expanded="false" aria-controls="collapseReservas">
+                                                        <i class="fas fa-calendar-alt mr-2"></i>Historial de Reservas
+                                                    </button>
+                                                </h6>
+                                            </div>
+                                            <div id="collapseReservas" class="collapse" aria-labelledby="headingReservas" data-parent="#animacionAccordion">
+                                                <div class="card-body text-gray-600">
+                                                    <ul class="list-unstyled mb-0">
+                                                        <li class="mb-2"><i class="fas fa-swimming-pool mr-2 text-primary"></i><strong>Piscina</strong> - 15/12/2024 (2:00 PM - 4:00 PM) - <span class="badge badge-success">Confirmada</span></li>
+                                                        <li class="mb-2"><i class="fas fa-fire mr-2 text-warning"></i><strong>Área BBQ</strong> - 20/11/2024 (6:00 PM - 9:00 PM) - <span class="badge badge-success">Completada</span></li>
+                                                        <li class="mb-0"><i class="fas fa-building mr-2 text-info"></i><strong>Salón Comunal</strong> - 10/10/2024 (7:00 PM - 10:00 PM) - <span class="badge badge-success">Completada</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card bg-light mb-2">
+                                            <div class="card-header" id="headingEstado">
+                                                <h6 class="mb-0">
+                                                    <button class="btn btn-link text-gray-800 collapsed" type="button" data-toggle="collapse" data-target="#collapseEstado" aria-expanded="false" aria-controls="collapseEstado">
+                                                        <i class="fas fa-home mr-2"></i>Estado de la Propiedad
+                                                    </button>
+                                                </h6>
+                                            </div>
+                                            <div id="collapseEstado" class="collapse" aria-labelledby="headingEstado" data-parent="#animacionAccordion">
+                                                <div class="card-body text-gray-600">
+                                                    <p class="mb-2"><strong>Estado de Cuenta:</strong> <span class="badge badge-success">Al día</span></p>
+                                                    <p class="mb-2"><strong>Meses de Antigüedad:</strong> 45 meses</p>
+                                                    <p class="mb-2"><strong>Pagos Totales:</strong> 44 de 45</p>
+                                                    <p class="mb-0"><strong>Observaciones:</strong> Residente cumplidor, sin incidencias reportadas.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -567,43 +660,43 @@
                     <!-- Indicadores con Fade-up -->
                     <div class="row">
                         <div class="col-lg-12">
-                            <div class="card shadow mb-4 bg-dark">
-                                <div class="card-header py-3 bg-gray-800 border-bottom">
-                                    <h6 class="m-0 font-weight-bold text-white">
-                                        <i class="fas fa-chart-bar mr-2"></i>Indicadores que Aparecen con Efecto Fade-up
+                            <div class="card shadow mb-4 bg-white">
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">
+                                        <i class="fas fa-chart-bar mr-2"></i>Indicadores de Notificaciones y Alertas
                                     </h6>
                                 </div>
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col-md-3 mb-3">
-                                            <div class="card bg-gray-800 border-left-primary fade-up-item">
+                                            <div class="card bg-light border-left-primary fade-up-item">
                                                 <div class="card-body text-center">
-                                                    <h4 class="text-primary mb-0">85%</h4>
-                                                    <p class="text-gray-400 small mb-0">Pagos al día</p>
+                                                    <h4 class="text-primary mb-0">92%</h4>
+                                                    <p class="text-gray-600 small mb-0">Notificaciones leídas</p>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-3 mb-3">
-                                            <div class="card bg-gray-800 border-left-success fade-up-item">
+                                            <div class="card bg-light border-left-success fade-up-item">
                                                 <div class="card-body text-center">
-                                                    <h4 class="text-success mb-0">12</h4>
-                                                    <p class="text-gray-400 small mb-0">Reservas activas</p>
+                                                    <h4 class="text-success mb-0">8</h4>
+                                                    <p class="text-gray-600 small mb-0">Notificaciones enviadas hoy</p>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-3 mb-3">
-                                            <div class="card bg-gray-800 border-left-warning fade-up-item">
+                                            <div class="card bg-light border-left-warning fade-up-item">
                                                 <div class="card-body text-center">
-                                                    <h4 class="text-warning mb-0">5</h4>
-                                                    <p class="text-gray-400 small mb-0">Pendientes</p>
+                                                    <h4 class="text-warning mb-0">3</h4>
+                                                    <p class="text-gray-600 small mb-0">Alertas activas</p>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-3 mb-3">
-                                            <div class="card bg-gray-800 border-left-info fade-up-item">
+                                            <div class="card bg-light border-left-info fade-up-item">
                                                 <div class="card-body text-center">
-                                                    <h4 class="text-info mb-0">3</h4>
-                                                    <p class="text-gray-400 small mb-0">En mora</p>
+                                                    <h4 class="text-info mb-0">24h</h4>
+                                                    <p class="text-gray-600 small mb-0">Tiempo promedio respuesta</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -619,20 +712,43 @@
                 <!-- Modal Demo Pago -->
                 <div class="modal fade" id="demoModalPago" tabindex="-1" role="dialog" aria-labelledby="demoModalPagoLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
-                        <div class="modal-content bg-dark">
-                            <div class="modal-header bg-gray-800 border-bottom">
-                                <h5 class="modal-title text-white" id="demoModalPagoLabel">
-                                    <i class="fas fa-money-bill mr-2"></i>Registrar Pago
+                        <div class="modal-content bg-white">
+                            <div class="modal-header bg-light border-bottom">
+                                <h5 class="modal-title text-gray-800" id="demoModalPagoLabel">
+                                    <i class="fas fa-bell mr-2"></i>Notificaciones del Sistema
                                 </h5>
-                                <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                <button type="button" class="close text-gray-800" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <p class="text-gray-400">Este modal aparece con una animación fade-in suave. Observa cómo se desvanece al abrirse.</p>
+                                <div class="list-group">
+                                    <div class="list-group-item bg-light mb-2">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <h6 class="mb-1 text-gray-800"><i class="fas fa-money-bill-wave mr-2 text-success"></i>Recordatorio de Pago</h6>
+                                            <small class="text-gray-600">Hace 2 horas</small>
+                                        </div>
+                                        <p class="mb-1 text-gray-600">3 residentes tienen pagos vencidos. Enviar recordatorio automático.</p>
+                                    </div>
+                                    <div class="list-group-item bg-light mb-2">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <h6 class="mb-1 text-gray-800"><i class="fas fa-calendar-check mr-2 text-info"></i>Reserva Confirmada</h6>
+                                            <small class="text-gray-600">Hace 5 horas</small>
+                                        </div>
+                                        <p class="mb-1 text-gray-600">María González confirmó reserva de Piscina para el 15/12/2024.</p>
+                                    </div>
+                                    <div class="list-group-item bg-light mb-2">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <h6 class="mb-1 text-gray-800"><i class="fas fa-exclamation-circle mr-2 text-warning"></i>Alerta de Mora</h6>
+                                            <small class="text-gray-600">Ayer</small>
+                                        </div>
+                                        <p class="mb-1 text-gray-600">Carlos Rodríguez tiene 2 meses de mora. Requiere atención inmediata.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="modal-footer bg-gray-800 border-top">
+                            <div class="modal-footer bg-light border-top">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary">Configurar Notificaciones</button>
                             </div>
                         </div>
                     </div>
@@ -641,60 +757,41 @@
                 <!-- Modal Demo Reserva -->
                 <div class="modal fade" id="demoModalReserva" tabindex="-1" role="dialog" aria-labelledby="demoModalReservaLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg" role="document">
-                        <div class="modal-content bg-dark">
-                            <div class="modal-header bg-gray-800 border-bottom">
-                                <h5 class="modal-title text-white" id="demoModalReservaLabel">
-                                    <i class="fas fa-calendar-plus mr-2"></i>Crear Reserva
+                        <div class="modal-content bg-white">
+                            <div class="modal-header bg-light border-bottom">
+                                <h5 class="modal-title text-gray-800" id="demoModalReservaLabel">
+                                    <i class="fas fa-exclamation-triangle mr-2"></i>Alertas y Recordatorios
                                 </h5>
-                                <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                <button type="button" class="close text-gray-800" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <p class="text-gray-400">Este panel simula un offcanvas con animación slide. En un sistema real, se deslizaría desde el lado derecho.</p>
+                                <div class="alert alert-warning" role="alert">
+                                    <h6 class="alert-heading"><i class="fas fa-exclamation-triangle mr-2"></i>Alertas Activas</h6>
+                                    <hr>
+                                    <p class="mb-2"><strong>Pagos Vencidos:</strong> 3 residentes requieren atención</p>
+                                    <p class="mb-2"><strong>Reservas Próximas:</strong> 2 reservas confirmadas para mañana</p>
+                                    <p class="mb-0"><strong>Mantenimiento:</strong> Área BBQ requiere limpieza programada</p>
+                                </div>
+                                <div class="alert alert-info" role="alert">
+                                    <h6 class="alert-heading"><i class="fas fa-info-circle mr-2"></i>Recordatorios Programados</h6>
+                                    <hr>
+                                    <ul class="mb-0">
+                                        <li>Recordatorio de pago mensual - Enviar el día 5</li>
+                                        <li>Confirmación de reservas - 24 horas antes</li>
+                                        <li>Reporte mensual - Generar el último día del mes</li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="modal-footer bg-gray-800 border-top">
+                            <div class="modal-footer bg-light border-top">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-warning">Gestionar Alertas</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <style>
-                    .hover-lift {
-                        transition: transform 0.3s ease, box-shadow 0.3s ease;
-                    }
-                    .hover-lift:hover {
-                        transform: translateY(-5px);
-                        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5) !important;
-                    }
-                    .hover-highlight {
-                        transition: background-color 0.3s ease, padding-left 0.3s ease;
-                    }
-                    .hover-highlight:hover {
-                        background-color: #4e73df !important;
-                        padding-left: 1.5rem;
-                    }
-                    .table-row-hover {
-                        transition: background-color 0.2s ease;
-                    }
-                    .table-row-hover:hover {
-                        background-color: #4e73df !important;
-                    }
-                    .fade-up-item {
-                        animation: fadeUp 0.6s ease-out;
-                    }
-                    @keyframes fadeUp {
-                        from {
-                            opacity: 0;
-                            transform: translateY(20px);
-                        }
-                        to {
-                            opacity: 1;
-                            transform: translateY(0);
-                        }
-                    }
-                </style>
 
             </div>
             <!-- End of Main Content -->
