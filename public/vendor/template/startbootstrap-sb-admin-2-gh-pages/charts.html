@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Charts</title>
+    <title>Sistema de Administración - Estadísticas Financieras</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -359,64 +359,142 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Charts</h1>
-                    <p class="mb-4">Chart.js is a third party plugin that is used to generate the charts in this theme.
-                        The charts below have been customized - for further customization options, please visit the <a
-                            target="_blank" href="https://www.chartjs.org/docs/latest/">official Chart.js
-                            documentation</a>.</p>
+                    <h1 class="h3 mb-4 text-gray-800">Estadísticas Financieras y Operativas</h1>
+                    <p class="mb-4 text-gray-600">Análisis visual de la gestión financiera y operativa del conjunto habitacional.</p>
+
+                    <!-- Cards Indicadores -->
+                    <div class="row mb-4">
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-success shadow h-100 py-2 bg-dark">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                                Mejor Mes de Recaudación</div>
+                                            <div class="h6 mb-0 font-weight-bold text-white">Agosto 2024</div>
+                                            <div class="text-xs text-gray-400">$58,200</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-trophy fa-2x text-gray-400"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-danger shadow h-100 py-2 bg-dark">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
+                                                Mes con Mayor Mora</div>
+                                            <div class="h6 mb-0 font-weight-bold text-white">Octubre 2024</div>
+                                            <div class="text-xs text-gray-400">25% morosidad</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-exclamation-triangle fa-2x text-gray-400"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-info shadow h-100 py-2 bg-dark">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
+                                                Promedio de Reservas</div>
+                                            <div class="h5 mb-0 font-weight-bold text-white">18</div>
+                                            <div class="text-xs text-gray-400">por mes</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-calendar-check fa-2x text-gray-400"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-warning shadow h-100 py-2 bg-dark">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                                                Top 3 Retrasos</div>
+                                            <div class="h6 mb-0 font-weight-bold text-white">Casa #15, #08, #22</div>
+                                            <div class="text-xs text-gray-400">3+ meses</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-list-ol fa-2x text-gray-400"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     <!-- Content Row -->
                     <div class="row">
 
                         <div class="col-xl-8 col-lg-7">
 
-                            <!-- Area Chart -->
-                            <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Area Chart</h6>
-                                </div>
-                                <div class="card-body">
-                                    <div class="chart-area">
-                                        <canvas id="myAreaChart"></canvas>
-                                    </div>
-                                    <hr>
-                                    Styling for the area chart can be found in the
-                                    <code>/js/demo/chart-area-demo.js</code> file.
-                                </div>
-                            </div>
-
-                            <!-- Bar Chart -->
-                            <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Bar Chart</h6>
+                            <!-- Gráfico de Barras - Morosidad Mensual -->
+                            <div class="card shadow mb-4 bg-dark">
+                                <div class="card-header py-3 bg-gray-800 border-bottom">
+                                    <h6 class="m-0 font-weight-bold text-white">
+                                        <i class="fas fa-chart-bar mr-2"></i>Morosidad Mensual
+                                    </h6>
                                 </div>
                                 <div class="card-body">
                                     <div class="chart-bar">
-                                        <canvas id="myBarChart"></canvas>
+                                        <canvas id="morosidadChart"></canvas>
                                     </div>
-                                    <hr>
-                                    Styling for the bar chart can be found in the
-                                    <code>/js/demo/chart-bar-demo.js</code> file.
+                                </div>
+                            </div>
+
+                            <!-- Gráfico de Línea - Total Recaudado -->
+                            <div class="card shadow mb-4 bg-dark">
+                                <div class="card-header py-3 bg-gray-800 border-bottom">
+                                    <h6 class="m-0 font-weight-bold text-white">
+                                        <i class="fas fa-chart-line mr-2"></i>Total Recaudado por Mes
+                                    </h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="chart-area">
+                                        <canvas id="recaudadoChart"></canvas>
+                                    </div>
                                 </div>
                             </div>
 
                         </div>
 
-                        <!-- Donut Chart -->
+                        <!-- Gráfico Doughnut - Reservas por Área -->
                         <div class="col-xl-4 col-lg-5">
-                            <div class="card shadow mb-4">
-                                <!-- Card Header - Dropdown -->
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Donut Chart</h6>
+                            <div class="card shadow mb-4 bg-dark">
+                                <div class="card-header py-3 bg-gray-800 border-bottom">
+                                    <h6 class="m-0 font-weight-bold text-white">
+                                        <i class="fas fa-chart-pie mr-2"></i>Porcentaje de Reservas por Área
+                                    </h6>
                                 </div>
-                                <!-- Card Body -->
                                 <div class="card-body">
                                     <div class="chart-pie pt-4">
-                                        <canvas id="myPieChart"></canvas>
+                                        <canvas id="reservasChart"></canvas>
                                     </div>
-                                    <hr>
-                                    Styling for the donut chart can be found in the
-                                    <code>/js/demo/chart-pie-demo.js</code> file.
+                                    <div class="mt-4 text-center small text-gray-400">
+                                        <span class="mr-2">
+                                            <i class="fas fa-circle text-primary"></i> Piscina
+                                        </span>
+                                        <span class="mr-2">
+                                            <i class="fas fa-circle text-warning"></i> BBQ
+                                        </span>
+                                        <span class="mr-2">
+                                            <i class="fas fa-circle text-success"></i> Cancha
+                                        </span>
+                                        <span>
+                                            <i class="fas fa-circle text-info"></i> Salón
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -424,6 +502,129 @@
 
                 </div>
                 <!-- /.container-fluid -->
+
+                <script>
+                // Gráfico de Barras - Morosidad Mensual
+                var ctxMorosidad = document.getElementById("morosidadChart");
+                var morosidadChart = new Chart(ctxMorosidad, {
+                    type: 'bar',
+                    data: {
+                        labels: ["Jul", "Ago", "Sep", "Oct", "Nov", "Dic"],
+                        datasets: [{
+                            label: "Porcentaje de Morosidad",
+                            backgroundColor: "rgba(231, 74, 59, 0.8)",
+                            borderColor: "rgba(231, 74, 59, 1)",
+                            data: [15, 12, 18, 25, 20, 18.5],
+                        }],
+                    },
+                    options: {
+                        maintainAspectRatio: false,
+                        legend: {
+                            display: false
+                        },
+                        scales: {
+                            yAxes: [{
+                                ticks: {
+                                    beginAtZero: true,
+                                    fontColor: '#858796'
+                                },
+                                gridLines: {
+                                    color: '#3a3f51'
+                                }
+                            }],
+                            xAxes: [{
+                                ticks: {
+                                    fontColor: '#858796'
+                                },
+                                gridLines: {
+                                    color: '#3a3f51'
+                                }
+                            }]
+                        }
+                    }
+                });
+
+                // Gráfico de Línea - Total Recaudado
+                var ctxRecaudado = document.getElementById("recaudadoChart");
+                var recaudadoChart = new Chart(ctxRecaudado, {
+                    type: 'line',
+                    data: {
+                        labels: ["Jul", "Ago", "Sep", "Oct", "Nov", "Dic"],
+                        datasets: [{
+                            label: "Total Recaudado ($)",
+                            lineTension: 0.3,
+                            backgroundColor: "rgba(78, 115, 223, 0.05)",
+                            borderColor: "rgba(78, 115, 223, 1)",
+                            pointRadius: 3,
+                            pointBackgroundColor: "rgba(78, 115, 223, 1)",
+                            pointBorderColor: "rgba(78, 115, 223, 1)",
+                            pointHoverRadius: 3,
+                            pointHoverBackgroundColor: "rgba(78, 115, 223, 1)",
+                            pointHoverBorderColor: "rgba(78, 115, 223, 1)",
+                            pointHitRadius: 10,
+                            pointBorderWidth: 2,
+                            data: [52000, 58200, 51000, 48000, 53000, 54200],
+                        }],
+                    },
+                    options: {
+                        maintainAspectRatio: false,
+                        legend: {
+                            display: false
+                        },
+                        scales: {
+                            yAxes: [{
+                                ticks: {
+                                    beginAtZero: true,
+                                    fontColor: '#858796'
+                                },
+                                gridLines: {
+                                    color: '#3a3f51'
+                                }
+                            }],
+                            xAxes: [{
+                                ticks: {
+                                    fontColor: '#858796'
+                                },
+                                gridLines: {
+                                    color: '#3a3f51'
+                                }
+                            }]
+                        }
+                    }
+                });
+
+                // Gráfico Doughnut - Reservas por Área
+                var ctxReservas = document.getElementById("reservasChart");
+                var reservasChart = new Chart(ctxReservas, {
+                    type: 'doughnut',
+                    data: {
+                        labels: ["Piscina", "BBQ", "Cancha", "Salón Comunal"],
+                        datasets: [{
+                            data: [35, 25, 20, 20],
+                            backgroundColor: ['#4e73df', '#f6c23e', '#1cc88a', '#36b9cc'],
+                            hoverBackgroundColor: ['#2e59d9', '#dda20a', '#17a673', '#2c9faf'],
+                            hoverBorderColor: "rgba(234, 236, 244, 1)",
+                        }],
+                    },
+                    options: {
+                        maintainAspectRatio: false,
+                        tooltips: {
+                            backgroundColor: "rgb(255,255,255)",
+                            bodyFontColor: "#858796",
+                            borderColor: '#dddfeb',
+                            borderWidth: 1,
+                            xPadding: 15,
+                            yPadding: 15,
+                            displayColors: false,
+                            caretPadding: 10,
+                        },
+                        legend: {
+                            display: false
+                        },
+                        cutoutPercentage: 80,
+                    },
+                });
+                </script>
 
             </div>
             <!-- End of Main Content -->

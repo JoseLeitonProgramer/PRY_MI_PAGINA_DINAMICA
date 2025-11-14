@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Border Utilities</title>
+    <title>Sistema de Administración - Estructuras y Jerarquía Visual</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -359,109 +359,209 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-1 text-gray-800">Border Utilities</h1>
-                    <p class="mb-4">Bootstrap's default utility classes can be found on the official <a
-                            href="https://getbootstrap.com/docs">Bootstrap Documentation</a> page. The custom utilities
-                        below were created to extend this theme past the default utility classes built into Bootstrap's
-                        framework.</p>
+                    <h1 class="h3 mb-4 text-gray-800">Estructuras y Jerarquía Visual</h1>
+                    <p class="mb-4 text-gray-600">Sistema de bordes y estructuras visuales para organizar la información del conjunto habitacional.</p>
 
-                    <!-- Content Row -->
+                    <!-- Cards Minimalistas -->
+                    <div class="row mb-4">
+                        <div class="col-lg-6 mb-4">
+                            <div class="card shadow mb-4 bg-dark">
+                                <div class="card-header py-3 bg-gray-800 border-bottom">
+                                    <h6 class="m-0 font-weight-bold text-white">
+                                        <i class="fas fa-square mr-2"></i>Cards Minimalistas sin Borde
+                                    </h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card bg-gray-800 mb-3 border-0">
+                                        <div class="card-body">
+                                            <h6 class="text-white mb-2">Resumen Financiero</h6>
+                                            <p class="text-gray-400 small mb-0">Card sin borde para información general</p>
+                                        </div>
+                                    </div>
+                                    <div class="card bg-gray-800 border-0">
+                                        <div class="card-body">
+                                            <h6 class="text-white mb-2">Estado del Mes</h6>
+                                            <p class="text-gray-400 small mb-0">Diseño limpio y minimalista</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-4">
+                            <div class="card shadow mb-4 bg-dark">
+                                <div class="card-header py-3 bg-gray-800 border-bottom">
+                                    <h6 class="m-0 font-weight-bold text-white">
+                                        <i class="fas fa-border-style mr-2"></i>Cards con Borde Tenue
+                                    </h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card bg-gray-800 mb-3 border border-secondary">
+                                        <div class="card-body">
+                                            <h6 class="text-white mb-2">Sección Importante</h6>
+                                            <p class="text-gray-400 small mb-0">Borde sutil para destacar contenido</p>
+                                        </div>
+                                    </div>
+                                    <div class="card bg-gray-800 border border-primary">
+                                        <div class="card-body">
+                                            <h6 class="text-white mb-2">Información Crítica</h6>
+                                            <p class="text-gray-400 small mb-0">Borde de color para jerarquía</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tablas con Estilo Gris Oscuro -->
+                    <div class="row mb-4">
+                        <div class="col-lg-12">
+                            <div class="card shadow mb-4 bg-dark">
+                                <div class="card-header py-3 bg-gray-800 border-bottom">
+                                    <h6 class="m-0 font-weight-bold text-white">
+                                        <i class="fas fa-table mr-2"></i>Tablas con Estilo Gris Oscuro Elegante
+                                    </h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered table-dark" width="100%" cellspacing="0">
+                                            <thead class="bg-gray-800">
+                                                <tr>
+                                                    <th class="border-secondary">Residente</th>
+                                                    <th class="border-secondary">Casa</th>
+                                                    <th class="border-secondary">Estado</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="border-secondary">María González</td>
+                                                    <td class="border-secondary">#01</td>
+                                                    <td class="border-secondary"><span class="badge badge-success">Pagado</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="border-secondary">Carlos Rodríguez</td>
+                                                    <td class="border-secondary">#02</td>
+                                                    <td class="border-secondary"><span class="badge badge-warning">Pendiente</span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Inputs con Borde Sutil -->
+                    <div class="row mb-4">
+                        <div class="col-lg-6">
+                            <div class="card shadow mb-4 bg-dark">
+                                <div class="card-header py-3 bg-gray-800 border-bottom">
+                                    <h6 class="m-0 font-weight-bold text-white">
+                                        <i class="fas fa-edit mr-2"></i>Inputs con Borde Sutil
+                                    </h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label class="text-white">Nombre del Residente</label>
+                                        <input type="text" class="form-control bg-gray-800 text-white border-secondary" placeholder="Ingrese nombre">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="text-white">Número de Casa</label>
+                                        <input type="text" class="form-control bg-gray-800 text-white border-secondary" placeholder="#01">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="card shadow mb-4 bg-dark">
+                                <div class="card-header py-3 bg-gray-800 border-bottom">
+                                    <h6 class="m-0 font-weight-bold text-white">
+                                        <i class="fas fa-file-alt mr-2"></i>Formularios con Estilos Sobrios
+                                    </h6>
+                                </div>
+                                <div class="card-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label class="text-white">Monto</label>
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text bg-gray-800 text-white border-secondary">$</span>
+                                                </div>
+                                                <input type="number" class="form-control bg-gray-800 text-white border-secondary" placeholder="0.00">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="text-white">Fecha</label>
+                                            <input type="date" class="form-control bg-gray-800 text-white border-secondary">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contenedores Redondeados -->
+                    <div class="row mb-4">
+                        <div class="col-lg-12">
+                            <div class="card shadow mb-4 bg-dark">
+                                <div class="card-header py-3 bg-gray-800 border-bottom">
+                                    <h6 class="m-0 font-weight-bold text-white">
+                                        <i class="fas fa-circle mr-2"></i>Contenedores Redondeados para Agrupación
+                                    </h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-4 mb-3">
+                                            <div class="p-4 bg-gray-800 rounded border border-secondary">
+                                                <h6 class="text-white mb-2">Información de Pago</h6>
+                                                <p class="text-gray-400 small mb-0">Agrupación con bordes redondeados</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="p-4 bg-gray-800 rounded border border-primary">
+                                                <h6 class="text-white mb-2">Datos del Residente</h6>
+                                                <p class="text-gray-400 small mb-0">Estructura visual clara</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="p-4 bg-gray-800 rounded border border-success">
+                                                <h6 class="text-white mb-2">Estado de Reserva</h6>
+                                                <p class="text-gray-400 small mb-0">Jerarquía visual definida</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Divisores Visuales -->
                     <div class="row">
-
-                        <!-- Border Left Utilities -->
-                        <div class="col-lg-6">
-
-                            <div class="card mb-4 py-3 border-left-primary">
+                        <div class="col-lg-12">
+                            <div class="card shadow mb-4 bg-dark">
+                                <div class="card-header py-3 bg-gray-800 border-bottom">
+                                    <h6 class="m-0 font-weight-bold text-white">
+                                        <i class="fas fa-grip-lines mr-2"></i>Divisores Visuales para Jerarquía de Secciones
+                                    </h6>
+                                </div>
                                 <div class="card-body">
-                                    .border-left-primary
+                                    <div class="mb-4">
+                                        <h5 class="text-white mb-3">Sección de Pagos</h5>
+                                        <hr class="border-secondary">
+                                        <p class="text-gray-400">Contenido de la sección de pagos separado visualmente.</p>
+                                    </div>
+                                    <div class="mb-4">
+                                        <h5 class="text-white mb-3">Sección de Reservas</h5>
+                                        <hr class="border-primary">
+                                        <p class="text-gray-400">Contenido de reservas con divisor de color primario.</p>
+                                    </div>
+                                    <div>
+                                        <h5 class="text-white mb-3">Sección de Estadísticas</h5>
+                                        <hr class="border-success">
+                                        <p class="text-gray-400">Divisor verde para sección de estadísticas.</p>
+                                    </div>
                                 </div>
                             </div>
-
-                            <div class="card mb-4 py-3 border-left-secondary">
-                                <div class="card-body">
-                                    .border-left-secondary
-                                </div>
-                            </div>
-
-                            <div class="card mb-4 py-3 border-left-success">
-                                <div class="card-body">
-                                    .border-left-success
-                                </div>
-                            </div>
-
-                            <div class="card mb-4 py-3 border-left-info">
-                                <div class="card-body">
-                                    .border-left-info
-                                </div>
-                            </div>
-
-                            <div class="card mb-4 py-3 border-left-warning">
-                                <div class="card-body">
-                                    .border-left-warning
-                                </div>
-                            </div>
-
-                            <div class="card mb-4 py-3 border-left-danger">
-                                <div class="card-body">
-                                    .border-left-danger
-                                </div>
-                            </div>
-
-                            <div class="card mb-4 py-3 border-left-dark">
-                                <div class="card-body">
-                                    .border-left-dark
-                                </div>
-                            </div>
-
                         </div>
-
-                        <!-- Border Bottom Utilities -->
-                        <div class="col-lg-6">
-
-                            <div class="card mb-4 py-3 border-bottom-primary">
-                                <div class="card-body">
-                                    .border-bottom-primary
-                                </div>
-                            </div>
-
-                            <div class="card mb-4 py-3 border-bottom-secondary">
-                                <div class="card-body">
-                                    .border-bottom-secondary
-                                </div>
-                            </div>
-
-                            <div class="card mb-4 py-3 border-bottom-success">
-                                <div class="card-body">
-                                    .border-bottom-success
-                                </div>
-                            </div>
-
-                            <div class="card mb-4 py-3 border-bottom-info">
-                                <div class="card-body">
-                                    .border-bottom-info
-                                </div>
-                            </div>
-
-                            <div class="card mb-4 py-3 border-bottom-warning">
-                                <div class="card-body">
-                                    .border-bottom-warning
-                                </div>
-                            </div>
-
-                            <div class="card mb-4 py-3 border-bottom-danger">
-                                <div class="card-body">
-                                    .border-bottom-danger
-                                </div>
-                            </div>
-
-                            <div class="card mb-4 py-3 border-bottom-dark">
-                                <div class="card-body">
-                                    .border-bottom-dark
-                                </div>
-                            </div>
-
-                        </div>
-
                     </div>
 
                 </div>
